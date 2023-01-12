@@ -1,6 +1,6 @@
 const Header = () => {
    return (
-      <header className=" w-full">
+      <header className=" w-full absolute top-0 left-0">
          <nav className="m-auto px-5 py-2.5 rounded container ">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                <a href="https://flowbite.com/" className="flex items-center">
