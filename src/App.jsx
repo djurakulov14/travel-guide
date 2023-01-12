@@ -2,16 +2,19 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.scss';
-import { HomePage } from './Components/HomePage';
-import { InfoPage } from './Components/InfoPage';
+import Layout from './Layout/Layout';
+import { HomePage } from './pages/HomePage';
+import { InfoPage } from './pages/InfoPage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/info:id" element={<InfoPage />} />
-		  </Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/info:id" element={<InfoPage />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
