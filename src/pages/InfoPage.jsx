@@ -4,26 +4,25 @@ import { useLocation } from 'react-router-dom'
 
 export const InfoPage = () => {
 
-    let {state} = useLocation()
+    let {pathname} = useLocation()
+    let splited = pathname.split(':').at(-1)
 
 
     const tours = useSelector(state => state.tours.tours)
-    const info = tours.filter(item => item.id == 1)[0]
-
+    const info = tours.filter(item => item.id == splited)[0]
     
-
+    console.log(splited);
 
     return (
         <>
             <section style={{backgroundImage: `url(${info.img})`}} className=" w-full h-[600px] bg-cover bg-center mb-10">
-                <div className='container text-white pt-48 bg'>
-                    <h1 className='text-5xl font-bold mb-10'>Сказка вечернего Самарканда</h1>
+                <div className='container m-auto text-white pt-48 bg'>
+                    <h1 className='text-5xl font-bold mb-10'>{info.title}</h1>
                     <p className=" text-4xl font-medium">Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>
-
                 </div>
             </section>
-            <section className=''>
-                <div className="container flex justify-between">
+            <section className=' w-full'>
+                <div className="container m-auto flex justify-between">
                     <div className="left w-3/4 ">
                         <p className=' text-xl mb-10'>В путешествии по Самарканду на закате дня вы полюбуетесь величественными сооружениями в подсветке и сделаете эффектные снимки, наполненные волшебством Средневекового Востока. Я познакомлю вас с историей древних архитектурных памятников и с особым трепетом расскажу о легендарном Тамерлане. А в новом парке «Вечный город» перед вами предстанет вся мозаика яркого Узбекистана.</p>
                         <h1 className=' text-2xl font-bold mb-5'>Что вас ожидает</h1>

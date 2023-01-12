@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import Cards from '../Components/Cards';
 import user from '../resources/user.jpg'
-
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
-  console.log(tours);
+  
 
   return (
     <div style={{background:`http://www.opts.tours/images/slider/slide3.jpg`}} className='px-5'>
@@ -21,6 +21,11 @@ export const HomePage = () => {
             <li className='text-white text-xl max-lg:text-base'>- Lorem, ipsum.</li>
           </ul>
         </div>
+      </section>
+      <section className='container m-auto px-5 grid grid-cols-3 gap-5'>
+      {
+        tours.map(i => <Cards item={i} key={i.id} />)
+      }
       </section>
     </div>
   )
