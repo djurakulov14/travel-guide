@@ -8,8 +8,8 @@ export const HomePage = () => {
   console.log(tours);
 
   return (
-    <div className='container m-auto px-5'>
-      <section style={{background:`url(http://www.opts.tours/media/k2/items/cache/deb9f9efc56ef2a940bdf0d58ccaad5c_XL.jpg)`}} className='  w-fll flex justify-around max-md:justify-start gap-20  py-36 text-gray-500 max-xl:py-28 max-lg:py-20 max-md:py-14 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
+    <div style={{background:`http://www.opts.tours/images/slider/slide3.jpg`}} className='px-5'>
+      <section className='container m-auto w-fll flex justify-around px-5 max-md:justify-start gap-20 py-36 text-gray-500 max-xl:py-28 max-lg:py-20 max-md:py-14 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
         <div className="">
           <img className='max-w-sm max-xl:max-w-xs max-lg:max-w-[270px] max-md:max-w-[200px] max-sm:max-w-full' src={user} alt="" />
         </div>
