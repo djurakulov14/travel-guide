@@ -1,29 +1,34 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { BiLeftArrowAlt } from 'react-icons/bi';
+
 
 export const InfoPage = () => {
 
+    window.scrollTo(0, 0);
     let {pathname} = useLocation()
     let splited = pathname.split(':').at(-1)
-
+	const navigate = useNavigate();
 
     const tours = useSelector(state => state.tours.tours)
-    const info = tours.filter(item => item.id === splited)[0]
+    const info = tours.filter(item => item.id == splited)[0]
     
     console.log(splited);
+
+    console.log(info, tours);
 
     return (
         <>
         <section style={{backgroundImage: `url(${info.img})`}} className=" w-full h-[600px] bg-cover bg-center mb-10 max-[680px]:h-[400px] max-[680px]:p-8 max-[500px]:h-[300px] max-[500px]:mb-0">
-            <div className='m-auto container text-white pt-48 max-[680px]: pt-14 max-[500px]:pt-5'>
+            <div className='m-auto container text-white pt-48 max-[680px]:pt-14 max-[500px]:pt-5'>
                 <h1 className='text-5xl font-bold mb-10 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl'>Сказка вечернего Самарканда</h1>
                 <p className=" text-4xl font-medium max-[680px]:text-3xl  max-[500px]:text-xl  max-[390px]:text-base" >Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>
-
+                <BiLeftArrowAlt className=' absolute top-2 left-3' onClick={() => navigate(-1)} size={40}/>
             </div>
         </section>
         <section className='w-full max-[680px]:p-8'>
