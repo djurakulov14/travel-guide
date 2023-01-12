@@ -13,22 +13,22 @@ export const InfoPage = () => {
 
 
     const tours = useSelector(state => state.tours.tours)
-    const info = tours.filter(item => item.id == splited)[0]
+    const info = tours.filter(item => item.id === splited)[0]
     
     console.log(splited);
 
     return (
         <>
-        <section style={{backgroundImage: `url(${info.img})`}} className=" w-full h-[600px] bg-cover bg-center mb-10">
-            <div className='m-auto container text-white pt-48 bg'>
-                <h1 className='text-5xl font-bold mb-10'>Сказка вечернего Самарканда</h1>
-                <p className=" text-4xl font-medium">Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>
+        <section style={{backgroundImage: `url(${info.img})`}} className=" w-full h-[600px] bg-cover bg-center mb-10 max-[680px]:h-[400px] max-[680px]:p-8 max-[500px]:h-[300px] max-[500px]:mb-0">
+            <div className='m-auto container text-white pt-48 max-[680px]: pt-14 max-[500px]:pt-5'>
+                <h1 className='text-5xl font-bold mb-10 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl'>Сказка вечернего Самарканда</h1>
+                <p className=" text-4xl font-medium max-[680px]:text-3xl  max-[500px]:text-xl  max-[390px]:text-base" >Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>
 
             </div>
         </section>
-        <section className='w-full'>
-            <div className="m-auto container flex gap-1">
-                <div className="left w-3/4 ">
+        <section className='w-full max-[680px]:p-8'>
+            <div className="m-auto container flex gap-1 max-lg:block">
+                <div className="left w-3/4 max-lg:w-full max-lg:mb-5">
                     <p className=' text-xl mb-10'>В путешествии по Самарканду на закате дня вы полюбуетесь величественными сооружениями в подсветке и сделаете эффектные снимки, наполненные волшебством Средневекового Востока. Я познакомлю вас с историей древних архитектурных памятников и с особым трепетом расскажу о легендарном Тамерлане. А в новом парке «Вечный город» перед вами предстанет вся мозаика яркого Узбекистана.</p>
                     <h1 className=' text-2xl font-bold mb-5'>Что вас ожидает</h1>
                     <div className="places mb-3">
@@ -49,25 +49,25 @@ export const InfoPage = () => {
                     </div>
                     <div className="slider w-[100%] h-fit">
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
-                <div className="right h-fit w-1/3 sticky top-5 right-2 bg-gray-600 p-5 rounded-lg text-white">
+                <div className="right h-fit w-1/3 sticky top-5 right-2 bg-gray-600 p-5 rounded-lg text-white max-lg:w-full">
                     <div className="top border-b border-white">
-                        <h1 className=' font-bold text-xl mb-5'>Индивидуальная экскурсия для 1–4 человек</h1>
+                        <h1 className=' font-bold text-xl mb-5 max-xl: font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
                         <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold'>Длительность</h1>
+                            <h1 className=' font-bold max-xl: font-semibold'>Длительность</h1>
                             <p>3 часа</p>
                         </div>
                         <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold'>Как проходит</h1>
+                            <h1 className=' font-bold max-xl: font-semibold'>Как проходит</h1>
                             <p>На машине</p>
                         </div>
                         <div className="duration flex justify-between  mb-3">
-                            <h1 className=' font-bold'>Дети</h1>
+                            <h1 className=' font-bold max-xl: font-semibold'>Дети</h1>
                             <p>Можно с детьми</p>
                         </div>
                     </div>

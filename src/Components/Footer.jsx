@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-white">
       <div className="container m-auto p-5 rounded-lg md:py-8">
         <div className="flex items-start max-sm:flex-col justify-between">
-          <a href="#0" className="flex items-center mb-4 sm:mb-0">
+          <a href="esdsdfs" className="flex items-center mb-4 sm:mb-0">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-8 mr-3"
@@ -20,7 +20,7 @@ const Footer = () => {
           <div class="flex flex-col gap-3 mt-4 sm:justify-between md:mt-0">
 			<p className="font-medium">Социальное:</p>
             <div className="flex gap-4">
-              <a href="#" class="text-gray-400 hover:text-gray-900">
+              <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
                 <svg
                   class="w-8 h-8"
                   fill="currentColor"
@@ -36,7 +36,7 @@ const Footer = () => {
                 <span class="sr-only">Facebook page</span>
               </a>
               <a
-                href="#"
+                href="esdsdfs"
                 class="text-gray-400 hover:text-gray-900 transition ease-linear"
               >
                 <svg
@@ -53,7 +53,7 @@ const Footer = () => {
                 </svg>
                 <span class="sr-only">Instagram page</span>
               </a>
-              <a href="#" class="text-gray-400 hover:text-gray-900">
+              <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
                 <svg
                   class="w-8 h-8"
                   fill="currentColor"
