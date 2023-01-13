@@ -2,13 +2,12 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/user.jpg'
+
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
-
-  
-
   return (
-    <div className="px-5  bg-[url('http://www.opts.tours/images/slider/slide3.jpg')] bg-no-repeat bg-cover	bg-center	">
+    <>
+    <div className="px-5  bg-no-repeat bg-cover	bg-center mb-20	">
       <section className='container m-auto w-fll flex justify-around px-5 max-md:justify-start gap-20 py-36 text-gray-500 max-xl:py-28 max-lg:py-20 max-md:py-14 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
         <div className="">
           <img className='max-w-sm max-xl:max-w-xs max-lg:max-w-[270px] max-md:max-w-[200px] max-sm:max-w-full' src={user} alt="" />
@@ -22,11 +21,12 @@ export const HomePage = () => {
           </ul>
         </div>
       </section>
-      <section className='container m-auto px-5 grid grid-cols-3 gap-5'>
+    </div>
+      <section className='container m-auto px-5 grid md:grid-cols-2 lg:grid-cols-2  xl:grid-cols-3 gap-5 mb-20 '>
       {
         tours.map(i => <Cards item={i} key={i.id} />)
       }
       </section>
-    </div>
+    </>
   )
 }
