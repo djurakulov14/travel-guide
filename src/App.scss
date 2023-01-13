@@ -1,22 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Montserrat';
+  font-family: "Montserrat";
 }
 
-body{
-  background-color: #F2F1EF;
+body {
+  background-color: #f2f1ef;
+  overflow-x: hidden;
 }
 
 .swiper {
   width: 100%;
   height: 100%;
+  background-color: #f2f1ef;
 }
 
 .swiper-slide {
@@ -38,14 +40,23 @@ body{
   -webkit-align-items: center;
   align-items: center;
   height: fit-content !important;
+  background-color: #f2f1ef !important;
 }
 
-@media (max-width: 360px){
-  .cont-n{
+@media (max-width: 360px) {
+  .cont-n {
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4 !important;
     -webkit-box-orient: vertical;
   }
+}
+
+.cont-n {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10 !important;
+  -webkit-box-orient: vertical;
 }
