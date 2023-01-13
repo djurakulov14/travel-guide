@@ -33,6 +33,7 @@ export const HomePage = () => {
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
           </div>
+          
         </marquee>
       </div>
       </div>
