@@ -17,8 +17,8 @@ const Footer = () => {
             <p className="font-medium">Свяжитесь с нами:</p>
             <p className="font-bold">+998901234567</p>
           </div>
-          <div className="flex flex-col gap-3 mt-4 sm:justify-between md:mt-0">
-			<p className="font-medium">Социальное:</p>
+          <div className="flex flex-col gap-3 mt-4 sm:justify-between md:mt-0 ">
+            <p className="font-medium">Социальное:</p>
             <div className="flex gap-4">
               <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
                 <svg
@@ -68,12 +68,12 @@ const Footer = () => {
             <hr className="sm:my-6 max-sm:py-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="#0" className="hover:underline">Flowbite™</a>. All Rights Reserved.
             </span>
-         </div>
-         </div>
-         </div>
+          </div>
+        </div>
+      </div>
 
-      </footer>
-   );
+    </footer>
+  );
 }
 
 export default Footer;
