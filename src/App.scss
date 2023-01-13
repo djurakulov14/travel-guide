@@ -49,3 +49,11 @@ body{
     -webkit-box-orient: vertical;
   }
 }
+
+.cont-n{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10 !important;
+  -webkit-box-orient: vertical;
+}
