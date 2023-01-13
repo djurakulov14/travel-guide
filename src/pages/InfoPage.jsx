@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom'
 export const InfoPage = () => {
 
     let {pathname} = useLocation()
+    console.log(pathname);
     let splited = pathname.split(':').at(-1)
 
 
