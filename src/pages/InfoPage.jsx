@@ -52,7 +52,7 @@ export const InfoPage = () => {
                         <h1 className=' text-lg font-bold'>Вечный город — культурная мозаика Узбекистана</h1>
                         <p className=''>В современном историко-этнографический парке представлена история, культура и архитектура всей нашей гостеприимной и радушной страны. В одном месте вы увидите мотивы Самарканда, Бухары, Ферганы, Ташкена, Хивы. Выясните, почему здесь умышленно не стали создавать точные реплики достопримечательностей. И оцените богатство тысячелетних традиций Узбекистана, заглядывая в лавки мастеров.</p>
                     </div>
-                    <div className="slider w-[100%] h-fit">
+                    <div className="slider w-[100%] h-fit bg-[#F2F1EF] ">
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                             <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
                             <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
