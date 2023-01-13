@@ -23,7 +23,7 @@ export const HomePage = () => {
           <img className='rounded-full max-w-lg max-xl:max-w-md max-lg:max-w-sm max-md:max-w-xs max-sm:max-w-full' src={user} alt="" />
         </div>
       </section>
-      <div className="w-[110%] absolute -left-2">
+      <div className="w-[100%] absolute -left-2">
         <marquee scrollamount="15" className="-rotate-3 bg-[#181818]">
           <div className="flex gap-5 bg py-3 text-white">
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
