@@ -65,15 +65,15 @@ const Footer = () => {
                 <span className="sr-only">Twitter page</span>
               </a>
             </div>
-          </div>
-        </div>
-        <hr className="sm:my-6 max-sm:py-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © Copyright 20223. All Rights Reserved
-        </span>
-      </div>
-    </footer>
-  );
-};
+            <hr className="sm:my-6 max-sm:py-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="#0" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+            </span>
+         </div>
+         </div>
+         </div>
+
+      </footer>
+   );
+}
 
 export default Footer;
