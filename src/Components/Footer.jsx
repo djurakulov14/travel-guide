@@ -20,11 +20,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3 mt-4 sm:justify-between md:mt-0">
 			<p className="font-medium">Социальное:</p>
             <div className="flex gap-4">
-<<<<<<< HEAD
-              <a href="#" className="text-gray-400 hover:text-gray-900">
-=======
               <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
->>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
                 <svg
                   className="w-8 h-8"
                   fill="currentColor"
@@ -40,13 +36,8 @@ const Footer = () => {
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
-<<<<<<< HEAD
-                href="#"
-                className="text-gray-400 hover:text-gray-900 transition ease-linear"
-=======
                 href="esdsdfs"
                 class="text-gray-400 hover:text-gray-900 transition ease-linear"
->>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
               >
                 <svg
                   className="w-8 h-8"
@@ -62,11 +53,7 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">Instagram page</span>
               </a>
-<<<<<<< HEAD
-              <a href="#" className="text-gray-400 hover:text-gray-900">
-=======
               <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
->>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
                 <svg
                   className="w-8 h-8"
                   fill="currentColor"
