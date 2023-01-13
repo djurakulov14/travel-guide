@@ -10,6 +10,9 @@
   font-family:'Montserrat';
 }
 
+body{
+  background-color: #F2F1EF;
+}
 
 .swiper {
   width: 100%;
@@ -37,3 +40,12 @@
   height: fit-content !important;
 }
 
+@media (max-width: 360px){
+  .cont-n{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical;
+  }
+}

@@ -62,18 +62,10 @@ export const InfoPage = () => {
                 </div>
                 <div className="right h-fit w-1/3 sticky top-5 right-2 bg-gray-600 p-5 rounded-lg text-white max-lg:w-full">
                     <div className="top border-b border-white">
-                        <h1 className=' font-bold text-xl mb-5 max-xl: font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
+                        <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
                         <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold max-xl: font-semibold'>Длительность</h1>
+                            <h1 className=' font-bold max-xl:font-semibold'>Длительность</h1>
                             <p>3 часа</p>
-                        </div>
-                        <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold max-xl: font-semibold'>Как проходит</h1>
-                            <p>На машине</p>
-                        </div>
-                        <div className="duration flex justify-between  mb-3">
-                            <h1 className=' font-bold max-xl: font-semibold'>Дети</h1>
-                            <p>Можно с детьми</p>
                         </div>
                     </div>
                     <div className="bot pt-5">
@@ -87,7 +79,8 @@ export const InfoPage = () => {
                         <a href="https://t.me/sard0r_js"><button className='w-full bg-gray-700 p-3 rounded-lg text-center mt-10'>Забронировать</button></a>
                     </div>
                 </div>
-            </div>
+                </div>
+
         </section>
     </>
     )

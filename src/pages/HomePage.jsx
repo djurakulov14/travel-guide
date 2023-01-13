@@ -8,6 +8,7 @@ export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
   return (
+    <> 
     <div className="px-5 ">
       <section className='container m-auto w-fll flex justify-around items-center px-5 max-md:justify-start gap-20 py-36 text-gray-500 max-xl:py-28 max-lg:py-20 max-md:py-14 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
         <div className="max-w-2xl w-full">
@@ -34,11 +35,12 @@ export const HomePage = () => {
           </div>
         </marquee>
       </div>
+      </div>
       <section className='container m-auto px-5 grid grid-cols-3 gap-5'>
         {
           tours.map(i => <Cards item={i} key={i.id} />)
         }
       </section>
-    </div>
+    </>
   )
 }
