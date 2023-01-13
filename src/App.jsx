@@ -1,6 +1,5 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import './App.scss';
 import Layout from './Layout/Layout';
 import { HomePage } from './pages/HomePage';

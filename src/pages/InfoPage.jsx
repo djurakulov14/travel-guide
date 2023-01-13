@@ -9,7 +9,7 @@ export const InfoPage = () => {
 
 
     const tours = useSelector(state => state.tours.tours)
-    const info = tours.filter(item => item.id == splited)[0]
+    const info = tours.filter(item => item.id === splited)[0]
     
     console.log(splited);
 
@@ -43,35 +43,18 @@ export const InfoPage = () => {
                             <p className=''>Я обязательно представлю вам главную достопримечательность нашего города, состоящую из двух величественных медресе и мечети, которая восхищает своим убранством. Во внутренних двориках медресе, слушая рассказы о процессе обучения студентов, вы представите и поймете, как работала наша система образования в 15-17 веках.</p>
                         </div>
                     </div>
-                    <div className="right h-fit w-1/3 sticky top-5 right-2 bg-gray-600 p-5 rounded-lg text-white">
-                        <div className="top border-b border-white">
-                            <h1 className=' font-bold text-xl mb-5'>Индивидуальная экскурсия для 1–4 человек</h1>
-                            <div className="duration flex justify-between mb-3">
-                                <h1 className=' font-bold'>Длительность</h1>
-                                <p>3 часа</p>
+                    <div className="bot pt-5">
+                        <div className="price">
+                            <div className="top flex gap-1 items-end mb-2">
+                                <h1 className=' text-2xl font-bold '>€ 80</h1>
+                                <p>за экскурсию</p>
                             </div>
-                            <div className="duration flex justify-between mb-3">
-                                <h1 className=' font-bold'>Как проходит</h1>
-                                <p>На машине</p>
-                            </div>
-                            <div className="duration flex justify-between  mb-3">
-                                <h1 className=' font-bold'>Дети</h1>
-                                <p>Можно с детьми</p>
-                            </div>
+                            <p className=' text-sm'>*Цена за 1-4 человек, независимо от числа участников</p>
                         </div>
-                        <div className="bot pt-5">
-                            <div className="price">
-                                <div className="top flex gap-1 items-end mb-2">
-                                    <h1 className=' text-2xl font-bold '>€ 80</h1>
-                                    <p>за экскурсию</p>
-                                </div>
-                                <p className=' text-sm'>*Цена за 1-4 человек, независимо от числа участников</p>
-                            </div>
-                            <a href="https://t.me/sard0r_js"><button className='w-full bg-gray-700 p-3 rounded-lg text-center mt-10'>Забронировать</button></a>
-                        </div>
+                        <a href="https://t.me/sard0r_js"><button className='w-full bg-gray-700 p-3 rounded-lg text-center mt-10'>Забронировать</button></a>
                     </div>
                 </div>
-            </section>
-        </>
+        </section>
+    </>
     )
 }

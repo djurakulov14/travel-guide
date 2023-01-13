@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-[#F2F1EF]">
       <div className="container m-auto p-5 rounded-lg md:py-8">
         <div className="flex items-start max-sm:flex-col justify-between">
-          <a href="#0" className="flex items-center mb-4 sm:mb-0">
+          <a href="esdsdfs" className="flex items-center mb-4 sm:mb-0">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-8 mr-3"
@@ -20,7 +20,11 @@ const Footer = () => {
           <div className="flex flex-col gap-3 mt-4 sm:justify-between md:mt-0">
 			<p className="font-medium">Социальное:</p>
             <div className="flex gap-4">
+<<<<<<< HEAD
               <a href="#" className="text-gray-400 hover:text-gray-900">
+=======
+              <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
+>>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
                 <svg
                   className="w-8 h-8"
                   fill="currentColor"
@@ -36,8 +40,13 @@ const Footer = () => {
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
+<<<<<<< HEAD
                 href="#"
                 className="text-gray-400 hover:text-gray-900 transition ease-linear"
+=======
+                href="esdsdfs"
+                class="text-gray-400 hover:text-gray-900 transition ease-linear"
+>>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
               >
                 <svg
                   className="w-8 h-8"
@@ -53,7 +62,11 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">Instagram page</span>
               </a>
+<<<<<<< HEAD
               <a href="#" className="text-gray-400 hover:text-gray-900">
+=======
+              <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
+>>>>>>> efa0a92b51d3496ffb238dd1c87a7a3ae205f7d6
                 <svg
                   className="w-8 h-8"
                   fill="currentColor"
