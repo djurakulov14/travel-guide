@@ -9,7 +9,7 @@ export const HomePage = () => {
 
   return (
     <> 
-    <div className="mb-40">
+    <div className="mb-20">
       <section className='container m-auto w-fll flex justify-around items-center px-5 max-md:justify-start gap-20 py-36 text-gray-500 max-xl:py-28 max-lg:py-20 max-md:py-14 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
         <div className="max-w-2xl w-full">
           <h2 className='text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl '>путишествии по Узбекистану c "anonimus"</h2>
@@ -23,8 +23,8 @@ export const HomePage = () => {
           <img className='rounded-full max-w-lg max-xl:max-w-md max-lg:max-w-sm max-md:max-w-xs max-sm:max-w-full' src={user} alt="" />
         </div>
       </section>
-      <div className="w-[100%] absolute -left-2">
-        <marquee scrollamount="15" className="-rotate-3 bg-[#181818]">
+      <div className="w-[100%] ">
+        <marquee scrollamount="15" className="w-[100%]  bg-[#181818]">
           <div className="flex gap-5 bg py-3 text-white">
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
@@ -33,6 +33,7 @@ export const HomePage = () => {
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
             <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
           </div>
+          
         </marquee>
       </div>
       </div>
