@@ -24,7 +24,8 @@ export const InfoPage = () => {
 
     return (
         <>
-        <section style={{backgroundImage: `url(${info.img})`}} className=" w-full h-[600px] bg-cover bg-center mb-10 max-[680px]:h-[400px] max-[680px]:p-5 max-[680px]:pt-7 max-[500px]:h-[300px] max-[500px]:mb-0">
+        <section className="w-full h-[600px] bg-cover bg-center mb-10 max-[680px]:h-[400px] max-[680px]:p-5 max-[680px]:pt-7 max-[500px]:h-[300px] max-[500px]:mb-0">
+            <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] backdrop-saturate-50 bg-white/30 ' src={info.img2} alt="" /></div>
             <div className='m-auto container text-white pt-48 max-[680px]:pt-14 max-[500px]:pt-5'>
                 <h1 className='text-5xl font-bold mb-10 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl'>Сказка вечернего Самарканда</h1>
                 <p className=" text-4xl font-medium max-[680px]:text-3xl  max-[500px]:text-xl  max-[390px]:text-base" >Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>
@@ -52,11 +53,11 @@ export const InfoPage = () => {
                         <h1 className=' text-lg font-bold'>Вечный город — культурная мозаика Узбекистана</h1>
                         <p className=''>В современном историко-этнографический парке представлена история, культура и архитектура всей нашей гостеприимной и радушной страны. В одном месте вы увидите мотивы Самарканда, Бухары, Ферганы, Ташкена, Хивы. Выясните, почему здесь умышленно не стали создавать точные реплики достопримечательностей. И оцените богатство тысячелетних традиций Узбекистана, заглядывая в лавки мастеров.</p>
                     </div>
-                    <div className="slider w-[100%] h-fit bg-[#F2F1EF] ">
-                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
+                    <div className="slider w-[70%] m-auto max-lg:w-full h-fit bg-[#F2F1EF] ">
+                        <Swiper navigation={true} modules={[Navigation]} className="mySwiper bg-[#F2F1EF] w-[70%] m-auto max-lg:W-[100%]">
+                            <SwiperSlide className='bg-[#F2F1EF]'><img src="https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
+                            <SwiperSlide className='bg-[#F2F1EF]'><img src="https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
+                            <SwiperSlide className='bg-[#F2F1EF]'><img src="https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg" className=' rounded-lg' alt="" /></SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
