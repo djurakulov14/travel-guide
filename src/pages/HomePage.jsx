@@ -30,7 +30,7 @@ export const HomePage = () => {
             </ul>
           </div>
 
-          <div data-aos="fade-left" className="bg-[#181818] rounded-l-full w-full p-2 relative before:absolute before:top-0 before:z-[-1] before:left-[267px] before:w-screen before:h-full before:bg-[#181818]">
+          <div data-aos="fade-left" className="bg-[#181818] rounded-l-full w-full p-2 relative  before:absolute before:top-0 before:z-[-1] before:left-[267px] before:w-screen before:h-full before:bg-[#181818]">
             <img className='rounded-full max-w-lg max-xl:max-w-md max-lg:max-w-sm max-md:max-w-xs max-sm:max-w-full' src={user} alt="" />
           </div>
         </section>
