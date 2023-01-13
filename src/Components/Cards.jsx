@@ -11,7 +11,7 @@ const Cards = ({item}) => {
 <div data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
-     data-aos-duration="500"  className=" hover:drop-shadow-2xl transition ease-in sm:w-full m-auto w-[95%] bg-white border border-gray-200 rounded-lg shadow-md">
+     data-aos-duration="500"  className="cont-n hover:drop-shadow-2xl transition ease-in sm:w-full m-auto w-[95%] bg-white border border-gray-200 rounded-lg shadow-md">
     <a >
         <img className="rounded-t-lg" src={item.img} alt="" />
     </a>
