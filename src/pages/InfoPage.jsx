@@ -9,7 +9,7 @@ export const InfoPage = () => {
 
 
     const tours = useSelector(state => state.tours.tours)
-    const info = tours.filter(item => item.id === splited)[0]
+    const info = tours.filter(item => item.id == splited)[0]
     
     console.log(splited);
 

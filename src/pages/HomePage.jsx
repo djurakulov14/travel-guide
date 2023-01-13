@@ -36,7 +36,7 @@ export const HomePage = () => {
         </marquee>
       </div>
       </div>
-      <section className='container m-auto px-5 grid grid-cols-3 gap-5'>
+      <section className='container m-auto px-5 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5'>
         {
           tours.map(i => <Cards item={i} key={i.id} />)
         }
