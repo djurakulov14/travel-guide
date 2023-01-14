@@ -9,7 +9,6 @@ import { BiLeftArrowAlt } from 'react-icons/bi';
 
 
 export const InfoPage = () => {
-
     window.scrollTo(0, 0);
     let {pathname} = useLocation()
     let splited = pathname.split(':').at(-1)

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
-import user from '../resources/user.jpg'
+import user from '../resources/grandpa.jpeg'
 import sun from '../resources/sun.svg'
 import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
@@ -18,14 +18,15 @@ export const HomePage = () => {
     window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
   }
   const scrollTour = () => {
-    window.scrollTo({ left: 0, top: 1090, behavior: "smooth" });
+    window.scrollTo({ left: 0, top: 1200, behavior: "smooth" });
   }
   
 
   return (
     <>
+    {/* #3ba4ec */}
       <div className="mb-20 w-full overflow-hidden">
-        <header className=" w-full p-4 bg-[#181818]">
+        <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
              <div className='flex items-center text-white gap-4'>
                <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' className='h-10' />
@@ -40,34 +41,36 @@ export const HomePage = () => {
              </nav>
           </div>
         </header>
-        <section className='container px-6 m-auto w-fll flex items-center max-md:justify-start gap-20 py-28 text-gray-500 max-xl:py-[50px] max-lg:py-12 max-md:py-11 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
-          <div data-aos="fade-right" data-aos-offset="300"
+        <section className='container px-6 m-auto w-fll flex items-center  max-md:justify-start gap-20 py-28 text-gray-500 max-xl:py-[50px] max-lg:py-12 max-md:py-11 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
+        <div data-aos="fade-right" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500" className="max-w-3xl w-full">
-            <h2 className='text-start max-sm:text-center text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-2xl'>путишествии по Узбекистану <span className=' text-orange-600'>✺</span> c "anonimus" </h2>
-            <ul className='mt-10 max-md:grid-cols-2'>
-              <li className='text-xl max-lg:text-base'>- Lorem, ipsum.</li>
-              <li className='text-xl max-lg:text-base'>- Lorem, ipsum.</li>
-              <li className='text-xl max-lg:text-base'>- Lorem, ipsum.</li>
-            </ul>
+            data-aos-duration="500" className="bg-[#3ba4ec] rounded-r-full p-2 relative before:absolute before:top-0 before:z-[-1] before:right-[267px] before:w-screen before:h-full before:bg-[#3ba4ec]">
+            <img className='rounded-full max-w-lg max-xl:max-w-[25rem] max-lg:max-w-[16rem] max-sm:max-w-full' src={user}  alt="" />
           </div>
-
           <div data-aos="fade-left" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500" className="bg-[#181818] rounded-l-full w-full p-2 relative  before:absolute before:top-0 before:z-[-1] before:left-[267px] before:w-screen before:h-full before:bg-[#181818]">
-            <img className='rounded-full max-w-lg max-xl:max-w-md max-lg:max-w-sm max-md:max-w-xs max-sm:max-w-full' src={user} alt="" />
+            data-aos-duration="500" className="max-w-3xl w-full">
+            <h2 className='text-start max-sm:text-center text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-2xl'>Путешествие по Узбекистану вместе <br /> c "anonimus" </h2>
+            <ul className='mt-10 max-md:grid-cols-2'>
+              <li className='text-xl max-lg:text-base'>- Путешествуй и наслаждайся</li>
+              <li className='text-xl max-lg:text-base'>- Узнавай традиции и историю Узбекистана </li>
+              <li className='text-xl max-lg:text-base'>- Заводи новых друзей</li>
+            </ul>
+            <a href="#0">
+            <button type="button" class="mt-5 text-white bg-[#3ba4ec] hover:bg-[#1f97e7] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ease-in">Узнать подробнее</button>
+            </a>
           </div>
         </section>
 
         <div className="w-[100%] ">
-          <marquee scrollamount="15" className="w-[100%]  bg-[#181818]">
+          <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Lorem, ipsum dolor. </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Хива </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="" />
             </div>
 
           </marquee>
