@@ -1,14 +1,14 @@
 const Footer = () => {
   return (
-    <footer class="p-4 bg-transparent mt-10 border-t-2 rounded-lg shadow md:px-6 md:py-8">
-      <div class="flex items-center justify-center gap-10 max-[360px]:flex-col max-[360px]:gap-5">
+    <footer className="p-4 bg-transparent mt-10 border-t-2 rounded-lg shadow md:px-6 md:py-8">
+      <div className="flex items-center justify-center gap-10 max-[360px]:flex-col max-[360px]:gap-5">
         <div className="flex items-center gap-2 ">
           <p className="text-xl font-medium max-sm:text-sm">Контакты:</p>
           <p className="text-xl font-bold max-sm:text-sm">+998901234567</p>
         </div>
         <div className="flex items-center gap-2 flex-col">
           <div className="flex gap-4 max-md:gap-2">
-            <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
+            <a href="esdsdfs" className="text-gray-400 hover:text-gray-900">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
             <a
               href="esdsdfs"
-              class="text-gray-400 hover:text-gray-900 transition ease-linear"
+              className="text-gray-400 hover:text-gray-900 transition ease-linear"
             >
               <svg
                 className="w-8 h-8"
@@ -41,7 +41,7 @@ const Footer = () => {
               </svg>
               <span className="sr-only">Instagram page</span>
             </a>
-            <a href="esdsdfs" class="text-gray-400 hover:text-gray-900">
+            <a href="esdsdfs" className="text-gray-400 hover:text-gray-900">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -55,10 +55,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-aut lg:my-8" />
-      <span class="block text-sm text-gray-500 sm:text-center">
+      <hr className="my-6 border-gray-200 sm:mx-aut lg:my-8" />
+      <span className="block text-sm text-gray-500 sm:text-center">
         © 3{""}
-        <a href="https://flowbite.com/" class="hover:underline">
+        <a href="https://flowbite.com/" className="hover:underline">
           Flowbite™
         </a>
         . All Rights Reserved.
