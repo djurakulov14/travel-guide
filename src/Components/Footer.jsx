@@ -8,7 +8,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 flex-col">
           <div className="flex gap-4 max-md:gap-2">
-            <a href="esdsdfs" className="text-gray-400 hover:text-gray-900">
+            <a href="esdsdfs" className="text-gray-400 hover:text-[#3ba4ec]">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -25,7 +25,7 @@ const Footer = () => {
             </a>
             <a
               href="esdsdfs"
-              className="text-gray-400 hover:text-gray-900 transition ease-linear"
+              className="text-gray-400 hover:text-red-500 transition ease-linear"
             >
               <svg
                 className="w-8 h-8"
@@ -41,7 +41,7 @@ const Footer = () => {
               </svg>
               <span className="sr-only">Instagram page</span>
             </a>
-            <a href="esdsdfs" className="text-gray-400 hover:text-gray-900">
+            <a href="esdsdfs" className="text-gray-400 hover:text-[#3ba4ec]">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
