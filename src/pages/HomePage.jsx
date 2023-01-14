@@ -27,7 +27,7 @@ export const HomePage = () => {
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
              <div className='flex items-center text-white gap-4'>
-               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' className='h-10' />
+               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10' />
                <p className='text-xl cursor-pointer'>Tour guide</p>
              </div>
              <nav>
