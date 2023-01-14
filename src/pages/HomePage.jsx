@@ -7,21 +7,43 @@ import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-
+import logo from '../resources/logo.svg'
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
   AOS.init({
     once: true
   })
+  const scrollBottom = () => {
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+  }
+  const scrollTour = () => {
+    window.scrollTo({ left: 0, top: 1090, behavior: "smooth" });
+  }
+  
 
   return (
     <>
       <div className="mb-20 w-full overflow-hidden">
-        <div className="w-full h-12 bg-[#181818]"></div>
-
+        <header className=" w-full p-4 bg-[#181818]">
+          <div className='container m-auto flex items-center justify-between'>
+             <div className='flex items-center text-white gap-4'>
+               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' className='h-10' />
+               <p className='text-xl cursor-pointer'>Tour guide</p>
+             </div>
+             <nav>
+                 <div className='flex gap-5 text-white'>
+                   <p onClick={scrollTour} className='cursor-pointer'>Туры</p>
+                   <p onClick={scrollBottom} className='cursor-pointer'>Вопросы</p>
+                   <p onClick={scrollBottom} className='cursor-pointer'>Контакты</p>
+                 </div>
+             </nav>
+          </div>
+        </header>
         <section className='container px-6 m-auto w-fll flex items-center max-md:justify-start gap-20 py-28 text-gray-500 max-xl:py-[50px] max-lg:py-12 max-md:py-11 max-md:gap-10 max-sm:py-5 max-sm:flex-col'>
-          <div data-aos="fade-right" className="max-w-3xl w-full">
+          <div data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500" className="max-w-3xl w-full">
             <h2 className='text-start max-sm:text-center text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-2xl'>путишествии по Узбекистану <span className=' text-orange-600'>✺</span> c "anonimus" </h2>
             <ul className='mt-10 max-md:grid-cols-2'>
               <li className='text-xl max-lg:text-base'>- Lorem, ipsum.</li>
@@ -30,7 +52,9 @@ export const HomePage = () => {
             </ul>
           </div>
 
-          <div data-aos="fade-left" className="bg-[#181818] rounded-l-full w-full p-2 relative  before:absolute before:top-0 before:z-[-1] before:left-[267px] before:w-screen before:h-full before:bg-[#181818]">
+          <div data-aos="fade-left" data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="500" className="bg-[#181818] rounded-l-full w-full p-2 relative  before:absolute before:top-0 before:z-[-1] before:left-[267px] before:w-screen before:h-full before:bg-[#181818]">
             <img className='rounded-full max-w-lg max-xl:max-w-md max-lg:max-w-sm max-md:max-w-xs max-sm:max-w-full' src={user} alt="" />
           </div>
         </section>
@@ -50,7 +74,7 @@ export const HomePage = () => {
         </div>
       </div>
       <div className='container px-5 m-auto w-[100%]'>
-        <div className='mb-10'>
+        <div>
           <h1 data-aos="fade-left"
             className='text-5xl font-medium'
             data-aos-offset="300"
@@ -65,6 +89,7 @@ export const HomePage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas officiis aspernatur aperiam molestias quidem aliquam maxime nulla quibusdam! Distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aperiam. Voluptatem aut, obcaecati accusantium qui totam sapiente ea consectetur ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse neque, reprehenderit et aspernatur repellat explicabo omnis minus enim fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, placeat dignissimos doloribus itaque modi natus delectus omnis suscipit quidem magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse neque, reprehenderit et aspernatur repellat explicabo omnis minus enim fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, placeat dignissimos doloribus itaque modi natus delectus omnis suscipit quidem magnam.
           </p>
         </div>
+        <div id='tours' className='mb-10'></div>
         <div className='mb-5'>
           <h1 className='text-5xl font-medium'>Актуальные туры</h1>
         </div>

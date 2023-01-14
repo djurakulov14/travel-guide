@@ -25,7 +25,7 @@ export const InfoPage = () => {
     return (
         <>
         <section className="w-full h-[600px] bg-cover bg-center mb-10 max-[680px]:h-[400px] max-[680px]:p-5 max-[680px]:pt-7 max-[500px]:h-[300px] max-[500px]:mb-0">
-            <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px]' src={info.img} alt="" /></div>
+            <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px]' src={info.img2} alt="" /></div>
             <div className='m-auto container text-white pt-48 max-[680px]:pt-14 max-[500px]:pt-5'>
                 <h1 className='text-5xl font-bold mb-10 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl'>{info.title}</h1>
                 <p className=" text-4xl font-medium max-[680px]:text-3xl  max-[500px]:text-xl  max-[390px]:text-base" >Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>

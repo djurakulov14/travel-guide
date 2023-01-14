@@ -50,7 +50,7 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div>
+    <div id='questions'>
       <h1 className='text-3xl mb-5 max-lg:text-xl max-sm:text-sm'>Ответы на часто задаваемые вопросы</h1>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
