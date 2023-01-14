@@ -2,12 +2,10 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
-import sun from '../resources/sun.svg'
 import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-import logo from '../resources/logo.svg'
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
@@ -45,7 +43,7 @@ export const HomePage = () => {
         <div data-aos="fade-right" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="500" className="bg-[#3ba4ec] rounded-r-full p-2 relative before:absolute before:top-0 before:z-[-1] before:right-[267px] before:w-screen before:h-full before:bg-[#3ba4ec]">
-            <img className='rounded-full max-w-lg max-xl:max-w-[25rem] max-lg:max-w-[16rem] max-sm:max-w-full' src={user}  alt="" />
+            <img className='rounded-full max-w-lg max-xl:max-w-[25rem] max-lg:max-w-[16rem] max-sm:max-w-full' src={user}  alt="qwerty" />
           </div>
           <div data-aos="fade-left" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -65,12 +63,12 @@ export const HomePage = () => {
         <div className="w-[100%] ">
           <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
-              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Хива </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Хива </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="qwerty" />
             </div>
 
           </marquee>
