@@ -46,7 +46,7 @@ export const InfoPage = () => {
                     <h1
                     data-aos="fade-right"
                     className=' text-2xl font-bold mb-5'>Что вас ожидает</h1>
-                    <div className="plcesss flex flex-col gap-6 mb-14">
+                    <div className="plcesss flex flex-col gap-4 mb-14">
                     {
                         info.places.map(item =>  
                         <div key={item.id} className="places w-[95%] max-lg:w-full"
