@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { BiLeftArrowAlt } from 'react-icons/bi';
 import AOS from 'aos';
+import kalpok from "../resources/kalpok.png"
 
 export const InfoPage = () => {
 
@@ -39,25 +40,30 @@ export const InfoPage = () => {
         </section>
         <section className='w-full max-[680px]:p-5'>
             <div className="m-auto container flex gap-1 max-lg:block">
-                <div className="left w-3/4 max-lg:w-full max-lg:mb-5">
+                <div className="left w-3/4 mb-8 max-lg:w-full max-lg:mb-5">
                     <p
                     data-aos="zoom-in"
-                    className=' text-xl mb-10'>{info.body}</p>
+                    className=' text-xl mb-10 w-[95%]'>{info.body}</p>
                     <h1
                     data-aos="fade-right"
                     className=' text-2xl font-bold mb-5'>Что вас ожидает</h1>
+                    <div className="plcesss flex flex-col gap-12">
                     {
                         info.places.map(item =>  
-                        <div className="places mb-3"
+                        <div key={item.id} className="places w-[95%]"
                         data-aos="fade-right"
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         >
                             <h1 className=' text-lg font-bold'>{item.title}</h1>
-                            <p className=''>{item.body}</p>
+                            <div className=" flex gap-2 h-28">
+                                <p className=''>{item.body}</p>
+                                <img src={item.img} className=" h-full" />
+                            </div>
                         </div>)
                     }
+                    </div>
                     <div
                     data-aos="fade-right"
                     data-aos-offset="300"
@@ -66,7 +72,7 @@ export const InfoPage = () => {
                     className="slider w-[70%] max-lg:w-full h-fit bg-[#F2F1EF] ">
                         <Swiper navigation={true} modules={[Navigation]} className="mySwiper bg-[#F2F1EF] w-[70%] m-auto max-lg:W-[100%]">
                             {
-                                info.places.map(item => <SwiperSlide className='bg-[#F2F1EF]'><img src={item.img} className=' rounded-lg w-full h-full' alt="" /></SwiperSlide>)
+                                info.places.map(item => <SwiperSlide key={item.id} className='bg-[#F2F1EF]'><img src={item.img} className=' rounded-lg w-full h-full' alt="" /></SwiperSlide>)
                             }
                         </Swiper>
                     </div>
@@ -76,7 +82,8 @@ export const InfoPage = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="500"
-                className="right h-fit w-1/3 sticky top-5 right-2 bg-gray-600 p-5 rounded-lg text-white max-lg:w-full">
+                className="right h-fit w-1/3 sticky top-12 bg-gray-600 p-5 rounded-lg text-white max-lg:w-full">
+                    <img src={kalpok} className=' w-28 absolute -top-6 -right-3 rotate-[25deg]' />
                     <div className="top border-b border-white">
                         <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
                         <div className="duration flex justify-between mb-3">
