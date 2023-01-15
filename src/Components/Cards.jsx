@@ -12,13 +12,9 @@ const Cards = ({item}) => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="500"  className="cont-n hover:drop-shadow-2xl transition ease-in sm:w-full m-auto w-[95%] bg-white border border-gray-200 rounded-lg shadow-md">
-    <a >
-        <img className="rounded-t-lg" src={item.img} alt="" />
-    </a>
+    <img className="rounded-t-lg" src={item.img} alt="" />
     <div className="p-5">
-        <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-dark">{item.title}</h5>
-        </a>
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-dark">{item.title}</h5>
         <p className=" cont-n mb-3 font-normal text-gray-700 dark:text-gray-400 ">{item.body}</p>
         <Link to={`/info/:` + item.id}> 
         <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#3ba4ec] rounded-lg hover:bg-[#1f97e7] focus:ring-4 focus:outline-none focus:ring-blue-300 ">

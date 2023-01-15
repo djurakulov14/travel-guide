@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
-import sun from '../resources/sun.svg'
 import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-import logo from '../resources/logo.svg'
+import { FaArrowCircleUp } from 'react-icons/fa'
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
@@ -20,16 +19,30 @@ export const HomePage = () => {
   const scrollTour = () => {
     window.scrollTo({ left: 0, top: 1200, behavior: "smooth" });
   }
-  
+  const scrollTop = () => {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+  const [show, setShow] = useState(false)
+  useEffect(() => {
+    window.onscroll = function (){
+      let scrollBar = window.pageYOffset;
+    if (scrollBar >= 800) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
+    }
+
+  }, []);
+
 
   return (
     <>
-    {/* #3ba4ec */}
       <div className="mb-20 w-full overflow-hidden">
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
              <div className='flex items-center text-white gap-4'>
-               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' className='h-10' />
+               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10' />
                <p className='text-xl cursor-pointer'>Tour guide</p>
              </div>
              <nav>
@@ -45,7 +58,7 @@ export const HomePage = () => {
         <div data-aos="fade-right" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="500" className="bg-[#3ba4ec] rounded-r-full p-2 relative before:absolute before:top-0 before:z-[-1] before:right-[267px] before:w-screen before:h-full before:bg-[#3ba4ec]">
-            <img className='rounded-full max-w-lg max-xl:max-w-[25rem] max-lg:max-w-[16rem] max-sm:max-w-full' src={user}  alt="" />
+            <img className='rounded-full max-w-lg max-xl:max-w-[25rem] max-lg:max-w-[16rem] max-sm:max-w-full' src={user}  alt="qwerty" />
           </div>
           <div data-aos="fade-left" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
@@ -65,12 +78,12 @@ export const HomePage = () => {
         <div className="w-[100%] ">
           <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
-              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Хива </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="" />
-              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="" />
+              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Хива </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="qwerty" />
+              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="qwerty" />
             </div>
 
           </marquee>
@@ -105,6 +118,14 @@ export const HomePage = () => {
       <div className='container px-5 m-auto w-[100%]'>
         <Questions />
       </div>
+      {
+        show 
+        ?
+        <div className='fixed right-5 bottom-5'>
+              <FaArrowCircleUp size={'35px'} color={'#3ba4ec'} onClick={scrollTop} />
+          </div>
+          : null
+      }
     </>
   )
 }
