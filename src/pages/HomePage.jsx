@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
@@ -6,6 +6,7 @@ import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
+import { FaArrowCircleUp } from 'react-icons/fa'
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
@@ -18,11 +19,25 @@ export const HomePage = () => {
   const scrollTour = () => {
     window.scrollTo({ left: 0, top: 1200, behavior: "smooth" });
   }
-  
+  const scrollTop = () => {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  }
+  const [show, setShow] = useState(false)
+  useEffect(() => {
+    window.onscroll = function (){
+      let scrollBar = window.pageYOffset;
+    if (scrollBar >= 800) {
+      setShow(true)
+    } else {
+      setShow(false)
+    }
+    }
+
+  }, []);
+
 
   return (
     <>
-    {/* #3ba4ec */}
       <div className="mb-20 w-full overflow-hidden">
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
@@ -103,6 +118,14 @@ export const HomePage = () => {
       <div className='container px-5 m-auto w-[100%]'>
         <Questions />
       </div>
+      {
+        show 
+        ?
+        <div className='fixed right-5 bottom-5'>
+              <FaArrowCircleUp size={'35px'} color={'#3ba4ec'} onClick={scrollTop} />
+          </div>
+          : null
+      }
     </>
   )
 }
