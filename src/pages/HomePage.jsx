@@ -38,11 +38,11 @@ export const HomePage = () => {
 
   return (
     <>
-      <div className="mb-20 w-full overflow-hidden">
+      <div className="mb-20 w-full overflow-hidden overflow-x-hidden">
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
              <div className='flex items-center text-white gap-4'>
-               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10' />
+               <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10 max-[490px]:hidden' />
                <p className='text-xl cursor-pointer'>Tour guide</p>
              </div>
              <nav>
@@ -70,7 +70,7 @@ export const HomePage = () => {
               <li className='text-xl max-lg:text-base'>- Заводи новых друзей</li>
             </ul>
             <a href="#0">
-            <button type="button" class="mt-5 text-white bg-[#3ba4ec] hover:bg-[#1f97e7] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ease-in">Узнать подробнее</button>
+            <button type="button" className="mt-5 text-white bg-[#3ba4ec] hover:bg-[#1f97e7] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ease-in">Узнать подробнее</button>
             </a>
           </div>
         </section>
@@ -89,7 +89,7 @@ export const HomePage = () => {
           </marquee>
         </div>
       </div>
-      <div className='container px-5 m-auto w-[100%]'>
+      <div className='container px-5 m-auto w-[100%] overflow-x-hidden'>
         <div>
           <h1 data-aos="fade-left"
             className='text-5xl font-medium'
