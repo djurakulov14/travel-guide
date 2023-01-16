@@ -48,7 +48,7 @@ export const HomePage = () => {
              <nav>
                  <div className='flex gap-5 text-white'>
                    <p onClick={scrollTour} className='cursor-pointer'>Туры</p>
-                   <p onClick={scrollBottom} className='cursor-pointer'>Вопросы</p>
+                   <p onClick={scrollBottom} className='cursor-pointer max-[400px]:hidden'>Вопросы</p>
                    <p onClick={scrollBottom} className='cursor-pointer'>Контакты</p>
                  </div>
              </nav>
