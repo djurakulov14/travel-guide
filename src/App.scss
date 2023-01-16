@@ -73,6 +73,13 @@ body {
   -webkit-line-clamp: 7 !important;
   -webkit-box-orient: vertical;
 }
+.cont-n2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical;
+}
 
 
 .infoCont {
@@ -81,4 +88,8 @@ body {
   -webkit-line-clamp: 7 !important;
   -webkit-box-orient: vertical;
   line-height: 18.8px;
+}
+
+.trn{
+  transform: translate(-50%, -50%);
 }

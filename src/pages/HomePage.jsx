@@ -7,6 +7,14 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
 import { FaArrowCircleUp } from 'react-icons/fa'
+import { Modal } from '@mui/material';
+import { alignProperty } from '@mui/material/styles/cssUtils';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
@@ -17,7 +25,7 @@ export const HomePage = () => {
     window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
   }
   const scrollTour = () => {
-    window.scrollTo({ left: 0, top: 1200, behavior: "smooth" });
+    window.scrollTo({ left: 0, top: 1280, behavior: "smooth" });
   }
   const scrollTop = () => {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
@@ -34,8 +42,30 @@ export const HomePage = () => {
     }
 
   }, []);
+// modal
 
+  const [open, setOpen] = React.useState(false);
+  const [scroll, setScroll] = React.useState('paper');
 
+ const handleClickOpen = (scrollType)  => {
+    setOpen(true);
+    setScroll(scrollType);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const descriptionElementRef = React.useRef(null);
+    React.useEffect(() => {
+        if (open) {
+          const { current: descriptionElement } = descriptionElementRef;
+          if (descriptionElement !== null) {
+            descriptionElement.focus();
+          }
+        }
+      }, [open]);
+  
+  
   return (
     <>
       <div className="mb-20 w-full overflow-hidden overflow-x-hidden">
@@ -97,12 +127,13 @@ export const HomePage = () => {
             data-aos-easing="ease-in-sine"
             data-aos-duration="500">Обо мне</h1>
           <p data-aos="fade-left"
-            className='mt-3 mb-3'
+            className='mt-3 mb-3 text-xl'
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="500"
-          >Меня зовут anonymus и я являюсь действующим гидом по городам Узбекистана.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas officiis aspernatur aperiam molestias quidem aliquam maxime nulla quibusdam! Distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aperiam. Voluptatem aut, obcaecati accusantium qui totam sapiente ea consectetur ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse neque, reprehenderit et aspernatur repellat explicabo omnis minus enim fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, placeat dignissimos doloribus itaque modi natus delectus omnis suscipit quidem magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse neque, reprehenderit et aspernatur repellat explicabo omnis minus enim fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, placeat dignissimos doloribus itaque modi natus delectus omnis suscipit quidem magnam.
+          >Всем привет из солнечного Узбекистана . Меня зовут Виктория. Я опытный профессиональный гид -экскурсовод . Вот уже более 20 лет, я провожу экскурсии на русском и на немецком языках. 
+          Я родилась в Самарканде и люблю мой город и я хочу поделиться этой любовью с Вами.
+          Мои экскурсии -это разговор по душам. Это не сухие исторические факты , а рассказ о городе , у которого было много радостных и печальных моментов. На прогулке со мной Вы увидите самые интересные и завораживающие места Самарканда. Познакомитесь <button className='text-blue-500' onClick={() => handleClickOpen('paper')}>read more...</button>
           </p>
         </div>
         <div id='tours' className='mb-10'></div>
@@ -126,6 +157,48 @@ export const HomePage = () => {
           </div>
           : null
       }
+      <div className='fixed inset-x-1/2 trn'>
+      {
+        open 
+        ?
+        <div>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        scroll={scroll}
+        aria-labelledby="scroll-dialog-title"
+        aria-describedby="scroll-dialog-description"
+      >
+        <DialogTitle id="scroll-dialog-title">Обо мне</DialogTitle>
+        <DialogContent dividers={scroll === 'paper'}>
+          <DialogContentText
+            id="scroll-dialog-description"
+            ref={descriptionElementRef}
+            tabIndex={-1}
+          >
+            {[...new Array(1)]
+              .map(
+                () => `Всем привет из солнечного Узбекистана . Меня зовут Виктория. Я опытный профессиональный гид -экскурсовод . Вот уже более 20 лет, я провожу экскурсии на русском и на немецком языках. 
+                Я родилась в Самарканде и люблю мой город и я хочу поделиться этой любовью с Вами.
+                Мои экскурсии -это разговор по душам. Это не сухие исторические факты , а рассказ о городе , у которого было много радостных и печальных моментов. На прогулке со мной Вы увидите самые интересные и завораживающие места Самарканда. Познакомитесь с бытом, нравами и традициями местных жителей.
+                Самарканд окружен с самого начала своего основания тайнами и мистикой, завораживает   мифами и легендами.
+                Я расскажу Вам легенды моего народа и открою тайны ,которые хранит Самарканд.
+                Мы пройдемся по местам , связанными с реальными персонажами, которые оставили след  в истории города .  Обязательно посетим сооружения , которые стали частью  этих легенд и преданий.
+                Люблю свой город Самарканд, горжусь им , отлично знаю его историю, его прошлое и настоящее.
+                Экскурсию подбираю под ваши пожелания и возможности.
+                `,
+              )
+              .join('\n')}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Закрыть</Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+        : null
+      }
+      </div>
     </>
   )
 }
