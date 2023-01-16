@@ -25,7 +25,6 @@ const Cards = ({ item }) => {
                 </div>
             </div>
         </Link>
-
     );
 }
 

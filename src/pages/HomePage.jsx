@@ -107,12 +107,12 @@ export const HomePage = () => {
         <div className="w-[100%] ">
           <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
-              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Хива </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Самарканд </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Ташкент </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Бухара </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Хива </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Хорезм </p><img src={star} alt="qwerty" />
+              <p className='text-xl font-normal'>Андижан </p>
             </div>
 
           </marquee>
