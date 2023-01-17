@@ -5,6 +5,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -91,6 +92,15 @@ export default function CustomizedAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      <div className="container m-auto shadow-md flex items-center justify-between px-4 py-3 border border-[#e5e5e5] bg-[#f7f7f7]">
+        <p className="text-[1rem">
+          По всем вопросам обращайтесь в мой телеграм
+        </p>
+        <button className="flex items-center gap-2 rounded px-3 py-1 bg-[#3ba4ec]">
+          <p className="text-sm font-semibold text-white">Телеграм</p>
+          <FaTelegramPlane color='white' size={18} />
+        </button>
+      </div>
     </div>
   );
 }
