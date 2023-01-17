@@ -6,7 +6,7 @@ import user from '../resources/grandpa.jpeg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-import { FaArrowCircleUp } from 'react-icons/fa'
+import { FaArrowCircleUp, FaTelegramPlane } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -145,6 +145,21 @@ export const HomePage = () => {
           tours.map(i => <Cards item={i} key={i.id} />)
         }
       </section>
+      <div
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500"
+        className="container m-auto shadow-md w-[90%] flex items-center justify-between gap-5  mb-6 rounded-lg p-6 max-sm:flex-col max-sm:gap-1"
+      >
+        <h1 className="text-3xl mb-5 max-lg:text-xl max-sm:text-sm">
+          По всем вопросам обращайтесь на мой телеграм
+        </h1>
+        <div className="flex items-center gap-5 p-3 bg-[#5cbeff] rounded-lg shadow-md cursor-pointer transition ease-in hover:bg-[#49b6ff]">
+          <p className="text-lg font-semibold text-white">Телеграм</p>
+          <FaTelegramPlane color='white' size={27}/>
+        </div>
+      </div>
       <div className='container px-5 m-auto w-[100%]'>
         <Questions />
       </div>
