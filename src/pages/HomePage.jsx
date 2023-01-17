@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
-import star from '../resources/star.svg'
+// import star from '../resources/star.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
@@ -105,7 +105,7 @@ export const HomePage = () => {
         </section>
 
         <div className="w-[100%] ">
-          <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
+          {/* <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
               <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="qwerty" />
               <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="qwerty" />
@@ -115,7 +115,7 @@ export const HomePage = () => {
               <p className='text-lg font-normal'>Андижан </p><img src={star} alt="qwerty" />
             </div>
 
-          </marquee>
+          </marquee> */}
         </div>
       </div>
       <div className='container px-5 m-auto w-[100%] overflow-x-hidden'>

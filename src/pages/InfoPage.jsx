@@ -46,19 +46,20 @@ export const InfoPage = () => {
                     data-aos="fade-right"
                     className=' text-2xl font-bold mb-5'>Что вас ожидает</h1>
                     <div ref={takeHeigth} className="plcesss flex flex-col gap-4 mb-14">
-                    <div className="roadline w-[4px] h-full bg-[#3ba4ec] rounded-full absolute z-[-1] left-36"></div>
+                    {/* <div className="roadline w-[4px] h-[90%] bg-[#3ba4ec] rounded-full  absolute z-[-1] left-36"></div> */}
+                    {/* before:w-4 before:h-4 before:top-2 before:shadow-md before:bg-white before:border-[#3ba4ec] bord before:absolute before:-left-[51px] before:rounded-full before:z-40 */}
                     {
                         info.places.map(item =>  
-                        <div key={item.id} className="places w-[95%] max-lg:w-full before:w-4 before:h-4 before:top-2 before:bg-white before:border-[#3ba4ec] before:absolute before:-left-[51px] before:rounded-full before:z-40"
+                        <div className="places w-[95%] max-lg:w-full "
                         data-aos="fade-right"
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="500"
                         >
-                            <h1 className=' text-xl font-bold'>{item.title}</h1>
-                            <div className="infoCont flex gap-2 h-28 max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:h-fit">
-                                <p className='text-ellipsis text-xl max-lg:mb-3'>{item.body}</p>
-                                <img src={item.img} alt={item.title} className=" rounded-xl max-md:w-full" />
+                            <h1 key={item.id} className=' text-xl font-bold'>{item.title}</h1>
+                            <div key={item.id} className="infoCont flex gap-2 h-28 max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:h-fit">
+                                <p key={item.id} className='text-ellipsis text-xl max-lg:mb-3 max-md:text-base'>{item.body}</p>
+                                <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl max-md:w-full" />
                             </div>
                         </div>)
                     }
@@ -69,7 +70,7 @@ export const InfoPage = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="500"
-                className="right h-fit w-1/3 sticky top-12 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full">
+                className="right h-fit w-1/3 sticky top-12 right-2 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full">
                     <img src={kalpok} className=' w-24 absolute -top-5 -right-3 rotate-[25deg]' alt="Тюбитейка" />
                     <div className="top border-b border-white">
                         <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
