@@ -70,7 +70,7 @@ export const InfoPage = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="500"
-                className="right h-fit w-1/3 sticky top-12 right-2 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full">
+                className="right stic h-fit w-1/3 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full">
                     <img src={kalpok} className=' w-24 absolute -top-5 -right-3 rotate-[25deg]' alt="Тюбитейка" />
                     <div className="top border-b border-white">
                         <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
@@ -94,7 +94,7 @@ export const InfoPage = () => {
                                 <p>3 человека по <b>55$</b></p>
                             </div>
                         </div>
-                        <a href="https://t.me/sard0r_js"><button className='w-full bg-[#00000030] p-3 rounded-lg text-center mt-2'>Забронировать</button></a>
+                        <a href="https://t.me/fevzie_ablaeva"><button className='w-full bg-[#00000030] p-3 rounded-lg text-center mt-2'>Забронировать</button></a>
                     </div>
                 </div>
                 </div>
