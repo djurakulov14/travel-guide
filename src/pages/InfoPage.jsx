@@ -75,7 +75,7 @@ export const InfoPage = () => {
                     <div className="top border-b border-white">
                         <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold'>Индивидуальная экскурсия для 1–4 человек</h1>
                         <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold max-xl:font-semibold'>Длительность</h1>
+                            <h1 className=' font-bold max-xl:font-semibold'>Длительность :</h1>
                             <p>6 часа</p>
                         </div>
                         <div className="duration flex flex-col justify-between mb-3">
@@ -86,7 +86,7 @@ export const InfoPage = () => {
                         </div>
                     </div>
                     <div className="bot pt-3">
-                        <div className="prices flex justify-between items-center">
+                        <div className="prices flex flex-col justify-between">
                         <h1 className='font-bold'>Цена :</h1>
                             <div className="ps">
                                 <p>1 человек по <b>100$</b></p>
