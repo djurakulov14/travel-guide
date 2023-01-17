@@ -29,7 +29,7 @@ export const InfoPage = () => {
         data-aos-easing="ease-in-sine"
         data-aos-duration="500"
         className="overflow-hidden w-full bg-cover bg-center mb-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[500px]:mb-0 max-[400px]:h-[250px]">
-            <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px]' src={info.img2} alt="" /></div>
+            <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px] object-cover' src={info.img2} alt="" /></div>
             <div className='m-auto container text-white pt-48 max-[680px]:pt-14 max-[680px]:p-5 max-[500px]:pt-8'>
                 <h1 className='text-5xl font-bold mb-10 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl max-[500px]:mt-10'>{info.title}</h1>
                 <p className=" text-4xl font-medium max-[680px]:text-3xl max-[500px]:text-xl  max-[390px]:text-base " >Изучить главные шедевры архитектуры, услышать истории из прошлого и ощутить сумеречную магию Востока</p>

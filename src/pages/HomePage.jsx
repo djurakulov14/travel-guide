@@ -104,7 +104,6 @@ export const HomePage = () => {
             </a>
           </div>
         </section>
-
         <div className="w-[100%] ">
           <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
             <div className="flex gap-5 bg py-3 text-white">
