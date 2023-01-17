@@ -20,13 +20,12 @@
   border-radius: 9em;
   // box-shadow: inset 1px 1px 10px #f3faf7;
 }
-img{
+img {
   user-select: none;
 }
 
 body {
   background-color: #f2f1ef;
-  overflow-x: hidden;
 }
 
 .swiper {
@@ -74,7 +73,13 @@ body {
   -webkit-line-clamp: 7 !important;
   -webkit-box-orient: vertical;
 }
-
+.cont-n2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical;
+}
 
 .infoCont {
   text-overflow: ellipsis;
@@ -82,4 +87,12 @@ body {
   -webkit-line-clamp: 7 !important;
   -webkit-box-orient: vertical;
   line-height: 18.8px;
+}
+
+.trn {
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
