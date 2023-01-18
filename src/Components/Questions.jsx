@@ -6,7 +6,6 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { FaTelegramPlane } from 'react-icons/fa';
-import { t } from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const Accordion = styled((props) => (
