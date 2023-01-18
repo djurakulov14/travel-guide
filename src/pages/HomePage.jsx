@@ -6,7 +6,7 @@ import user from '../resources/grandpa.jpeg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-import { FaArrowCircleUp, FaTelegramPlane } from 'react-icons/fa'
+import { FaArrowCircleUp } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
