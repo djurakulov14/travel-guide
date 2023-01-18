@@ -6,23 +6,22 @@ import xiva2 from '../../../resources/night-khiva.jpeg'
 import tash from '../../../resources/night-tash.jpeg'
 import tash2 from '../../../resources/tashkent-amir-timur-square.webp'
 
-
 const initialState = {
     tours: [
         {
             id: 1,
-            title: "Тур по Самарканду",
-            body: "Самарканд — один из древнейших городов мира, основанный, по археологическим данным, в середине VIII века до н. э. (Древняя Мараканда), столица государства Тимуридов, стал первой столицей советского Узбекистана в 1924 году. Более 2 тысячелетий город являлся ключевым пунктом на Великом шёлковом пути между Китаем и Европой, а также одним из главных центров науки средневекового Востока.",
+            title: "Tour in Samarkand",
+            body: "Samarkand - one of the oldest cities in the world, founded, according to archaeological data, in the middle of the 8th century B.C. (Ancient Marakand), the capital of the state of Timurids, became the first capital of Soviet Uzbekistan in 1924. For more than two millennia, the city has been a key point on the Silk Road between China and Europe, as well as a major center.",
             price: "100$",
             img: "http://www.opts.tours/images/slider/slide3.jpg",
             img2: "http://www.opts.tours/images/slider/slide3.jpg",
             places: [
-                {title:"Мавзолей Гур Эмир", img: "https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg", body: "Посещение города мы начнем с мавзолея Гур – Эмир, усыпальницы Тамерлана и членов династии Тимуридов."},
-                {title:"Площадь Регистан", img: "https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg", body: "Продолжим нашу экскурсию на одной из самой  знаменитой  площади Регистан, которая являлась  торговым и научным центром  Самарканда на протяжении многих веков."},
-                {title:"Мечеть Биби - Ханым", img: "https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg", body: "Далее мы пройдем по  знаменитой торговой улице и окажемся в самой большой соборной мечети Самарканда. Эта мечеть Биби – Ханым."},
-                {title:"Сиябский базар", img: "https://www.advantour.com/img/uzbekistan/samarkand/siab-bazaar1.jpg", body: "Рядом с  соборной мечетью Биби – Ханым находится один из древнейших базаров Самарканда – Сиабский базар."},
-                {title:"Обсерватория Улугбека", img: "https://www.orexca.com/img/uzbekistan/samarkand/ulugbek-observatory.jpg", body: "Мы  побываем  в обсерватории Улугбека , которые было построено  уникальным и прогрессивным в средние века. Во время посещении обсерватории Улугбека мы увидим с вами сохранившуюся часть секстанта."},
-                {title:"Некрополь Шахи – Зинда", img: "https://www.orexca.com/img/uzbekistan/samarkand/shahi_zinda2.jpg", body: "А завершим нашу программу прогулкой таинственного  некрополя Шахи – Зинда. Это ансамбль усыпальниц самаркандской знати."},
+                {title:"Gur Emir mausoleum", img: "https://cdn.tripster.ru/thumbs2/84e2ae84-594f-11ed-a372-deb9864510e4.800x600.jpeg", body: "Visiting the city we will start with the mausoleum Gur - Emir, the tomb of Tamerlan and members of the Timurid dynasty."},
+                {title:"Registan square", img: "https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg", body: "We will continue our excursion on one of the most famous Registan Square, which has been the shopping and scientific center of Samarkand for centuries."},
+                {title:"Bibi - Khanum mosque", img: "https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg", body: "Next, we will walk along the famous shopping street and find ourselves in the largest cathedral mosque in Samarkand. This Bibi mosque is Hanym."},
+                {title:"Siyab bazaar", img: "https://www.advantour.com/img/uzbekistan/samarkand/siab-bazaar1.jpg", body: "Next to the Bibi-Hanym Mosque is one of the oldest bazaars of Samarkand - Siyab bazaar."},
+                {title:"Ulugbek's Observotory", img: "https://www.orexca.com/img/uzbekistan/samarkand/ulugbek-observatory.jpg", body: "We will visit the Ulugbek Observatory, which was built unique and progressive in the Middle Ages. During the visit to the Ulugbek Observatory we will see with you the preserved part of the sextant."},
+                {title:"Shakhi-Zinda necropolis", img: "https://www.orexca.com/img/uzbekistan/samarkand/shahi_zinda2.jpg", body: "And let’s finish our program with a walk of the mysterious necropolis of Shahi - Zinda. This is a ensemble of tombs of Samarkand nobility."},
             ]
         },
         {
@@ -92,7 +91,7 @@ const initialState = {
 }
 
 export const toursSlice = createSlice({
-    name: 'tours',
+    name: 'toursEN',
     initialState,
     reducers: {}
 })

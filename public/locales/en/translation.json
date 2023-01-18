@@ -1,3 +1,18 @@
 {
-    "hi": "hi i'am qwerty"
+    "infoSubTitle": "Explore the main masterpieces of architecture, hear stories from the past and experience the twilight magic of the East",
+    "infoh1": "What's waiting for you :",
+    "stick": {
+        "title": "Individual excursion for 1-4 people",
+        "durationH1": "Duration",
+        "time": "6 hours",
+        "priceIncTitle": "The price includes :",
+        "priceinc1": "Tour with a guide",
+        "priceinc2": "Enterance tickets",
+        "priceinc3": "Transportation during the tour",
+        "price": "Price :",
+        "price1": "1 person by 100$",
+        "price2": "2 people by 65$",
+        "price3": "3 people by 55$",
+        "button": "Book"
+    }
 }

@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
 import ru from '../resources/russia.svg'
+import us from '../resources/us.png'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
@@ -13,10 +14,17 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { useTranslation } from 'react-i18next'
+
 
 export const HomePage = () => {
-  const tours = useSelector(state => state.tours.tours)
+  const { t, i18n } = useTranslation()
+  const currentLNG = useTranslation()[1].language
+  
+  const toursEN = useSelector(state => state.toursEN.tours)
+  const toursRU = useSelector(state => state.toursRU.tours)
 
+  const tours = currentLNG === "en" ? toursEN : toursRU
   AOS.init({
     once: true
   })
@@ -67,6 +75,10 @@ export const HomePage = () => {
     }
   }, [open]);
 
+  function ChangeLanguage(language) {
+    i18n.changeLanguage(language)
+  }
+
 
   return (
     <>
@@ -82,9 +94,9 @@ export const HomePage = () => {
                 <p onClick={scrollTour} className='cursor-pointer'>Туры</p>
                 <p onClick={scrollBottom} className='cursor-pointer max-[460px]:hidden'>Вопросы</p>
                 <p onClick={scrollBottom} className='cursor-pointer max-[355px]:hidden'>Контакты</p>
-                <div className='flex gap-0 items-center mr-5 cursor-pointer'>
-                  <img src={ru} alt="russia" />
-                  <p>РУ</p>
+                <div onClick={() => ChangeLanguage(currentLNG === "en" ? "ru" : "en")} className='flex gap-0 items-center mr-5 cursor-pointer'>
+                  <img className=' w-6' src={currentLNG === "en" ? us : ru} alt="language" />
+                  <p>{currentLNG === "en" ? "EN" : "РУ"}</p>
                 </div>
               </div>
             </nav>
@@ -110,7 +122,7 @@ export const HomePage = () => {
               <button type="button" className="mt-5 text-white bg-[#3ba4ec] hover:bg-[#1f97e7] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ease-in">Узнать подробнее</button>
             </a> */}
             <button className='p-2 rounded-full bg-[#3ba4ec] animate-bounce mt-10' onClick={scrollTour2}>
-                <svg class=" w-9 h-9 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className=" w-9 h-9 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
             </button>
