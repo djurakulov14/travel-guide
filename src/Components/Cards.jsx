@@ -2,10 +2,12 @@ import React from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 const Cards = ({ item }) => {
     AOS.init({
         once: true
     })
+    const {t} = useTranslation()
     return (
         <Link to={`/info/:` + item.id}>
             <div data-aos="fade-right"
@@ -18,7 +20,7 @@ const Cards = ({ item }) => {
                     <p className=" cont-n mb-3 font-normal text-gray-700 dark:text-gray-400 ">{item.body}</p>
                     <Link to={`/info/:` + item.id}>
                         <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#3ba4ec] rounded-lg hover:bg-[#1f97e7] focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-                            Узнать подробнее
+                            {t("moreInfoBtn")}
                             <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                         </button>
                     </Link>

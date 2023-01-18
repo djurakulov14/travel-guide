@@ -6,6 +6,8 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import { FaTelegramPlane } from 'react-icons/fa';
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -50,9 +52,10 @@ export default function CustomizedAccordions() {
     setExpanded(newExpanded ? panel : false);
   };
 
+  const {t} = useTranslation()
   return (
     <div id='questions'>
-      <h1 className='text-3xl mb-5 max-lg:text-xl max-sm:text-sm'>Ответы на часто задаваемые вопросы</h1>
+      <h1 className='text-3xl mb-5 max-lg:text-xl max-sm:text-sm'>{t("Answers")}</h1>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>Collapsible Group Item #1</Typography>
@@ -94,7 +97,7 @@ export default function CustomizedAccordions() {
       </Accordion>
       <div className="m-auto shadow-md flex items-center flex-wrap justify-between px-4 py-3 border border-[#e5e5e5] bg-[#f7f7f7] ">
         <p className="text-[1rem">
-          По  <span className='max-[465px]:hidden'>всем</span> оставшимся вопросам <span className='max-[465px]:hidden'>обращайтесь в</span> <span className='max-[503px]:hidden'>мой</span> <span className='max-[585px]:hidden'>телеграм</span>
+          {t("Telega1")}  <span className='max-[465px]:hidden'>{t("Telega2")}</span> {t("Telega3")} <span className='max-[465px]:hidden'>{t("Telega4")}</span> <span className='max-[503px]:hidden'>{t("Telega5")}</span> <span className='max-[585px]:hidden'>{t("Telega6")}</span>
         </p>
           <a href="https://t.me/fevzie_ablaeva">
         <button className="flex items-center gap-2 rounded px-3 py-1 bg-[#3ba4ec]">
