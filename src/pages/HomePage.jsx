@@ -25,6 +25,9 @@ export const HomePage = () => {
   const scrollTour = () => {
     window.scrollTo({ left: 0, top: 1280, behavior: "smooth" });
   }
+  const scrollTour2 = () => {
+    window.scrollTo({ left: 0, top: 1140, behavior: "smooth" });
+  }
   const scrollTop = () => {
     window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   }
@@ -92,30 +95,24 @@ export const HomePage = () => {
           <div data-aos="fade-left" data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="500" className="max-w-3xl w-full">
-            <h2 className='text-start max-sm:text-center text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-2xl'>Путешествие по Узбекистану вместе <br /> c "anonimus" </h2>
+            <h2 className='text-start max-sm:text-center text-5xl max-xl:text-3xl max-lg:text-2xl max-md:text-2xl'>Путешествие по Узбекистану вместе <br /> c Викторией </h2>
             <ul className='mt-10 max-md:grid-cols-2'>
               <li className='text-xl max-lg:text-base'>- Путешествуй и наслаждайся</li>
               <li className='text-xl max-lg:text-base'>- Узнавай традиции и историю Узбекистана </li>
               <li className='text-xl max-lg:text-base'>- Заводи новых друзей</li>
             </ul>
-            <a href="#0">
+            {/* <a href="https://t.me/fevzie_ablaeva">
               <button type="button" className="mt-5 text-white bg-[#3ba4ec] hover:bg-[#1f97e7] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ease-in">Узнать подробнее</button>
-            </a>
+            </a> */}
+            <button className='p-2 rounded-full bg-[#3ba4ec] animate-bounce mt-10' onClick={scrollTour2}>
+                <svg class=" w-9 h-9 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </button>
           </div>
         </section>
-
-        <div className="w-[100%] ">
-          {/* <marquee scrollamount="15" className="w-[100%]  bg-[#3ba4ec]">
-            <div className="flex gap-5 bg py-3 text-white">
-              <p className='text-lg font-normal'>Самарканд </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Ташкент </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Бухара </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Хива </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Хорезм </p><img src={star} alt="qwerty" />
-              <p className='text-lg font-normal'>Андижан </p><img src={star} alt="qwerty" />
-            </div>
-
-          </marquee> */}
+        <div className="w-[100%] bg-[#3ba4ec] h-14 ">
+            
         </div>
       </div>
       <div className='container px-5 m-auto w-[100%] overflow-x-hidden'>
@@ -145,6 +142,7 @@ export const HomePage = () => {
           tours.map(i => <Cards item={i} key={i.id} />)
         }
       </section>
+
       <div className='container px-5 m-auto w-[100%]'>
         <Questions />
       </div>
