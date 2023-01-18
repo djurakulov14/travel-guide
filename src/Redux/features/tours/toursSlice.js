@@ -5,6 +5,8 @@ import xiva from '../../../resources/khiva2.jpg'
 import xiva2 from '../../../resources/night-khiva.jpeg'
 import tash from '../../../resources/night-tash.jpeg'
 import tash2 from '../../../resources/tashkent-amir-timur-square.webp'
+
+
 const initialState = {
     tours: [
         {
@@ -19,8 +21,8 @@ const initialState = {
                 {title:"Площадь Регистан", img: "https://cdn.tripster.ru/thumbs2/9dd3cdca-594e-11ed-865b-deb9864510e4.800x600.jpeg", body: "Продолжим нашу экскурсию на одной из самой  знаменитой  площади Регистан, которая являлась  торговым и научным центром  Самарканда на протяжении многих веков."},
                 {title:"Мечеть Биби - Ханым", img: "https://cdn.tripster.ru/thumbs2/dc1839fe-594e-11ed-bfbb-ee13dcd0c4e0.800x600.jpeg", body: "Далее мы пройдем по  знаменитой торговой улице и окажемся в самой большой соборной мечети Самарканда. Эта мечеть Биби – Ханым."},
                 {title:"Сиябский базар", img: "https://www.advantour.com/img/uzbekistan/samarkand/siab-bazaar1.jpg", body: "Рядом с  соборной мечетью Биби – Ханым находится один из древнейших базаров Самарканда – Сиабский базар."},
-                {title:"Некрополь Шахи – Зинда", img: "https://www.orexca.com/img/uzbekistan/samarkand/shahi_zinda2.jpg", body: "Мы  побываем  в обсерватории Улугбека , которые было построено  уникальным и прогрессивным в средние века. Во время посещении обсерватории Улугбека мы увидим с вами сохранившуюся часть секстанта."},
-                {title:"Обсерватория Улугбека", img: "https://www.orexca.com/img/uzbekistan/samarkand/ulugbek-observatory.jpg", body: "А завершим нашу программу прогулкой таинственного  некрополя Шахи – Зинда. Это ансамбль усыпальниц самаркандской знати."},
+                {title:"Обсерватория Улугбека", img: "https://www.orexca.com/img/uzbekistan/samarkand/ulugbek-observatory.jpg", body: "Мы  побываем  в обсерватории Улугбека , которые было построено  уникальным и прогрессивным в средние века. Во время посещении обсерватории Улугбека мы увидим с вами сохранившуюся часть секстанта."},
+                {title:"Некрополь Шахи – Зинда", img: "https://www.orexca.com/img/uzbekistan/samarkand/shahi_zinda2.jpg", body: "А завершим нашу программу прогулкой таинственного  некрополя Шахи – Зинда. Это ансамбль усыпальниц самаркандской знати."},
             ]
         },
         {

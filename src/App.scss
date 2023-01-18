@@ -96,3 +96,10 @@ body {
 .text {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1000 - 320)));
 }
+
+.stic {
+  position: sticky;
+  top: 20px;
+  left: 20px;
+  z-index: 122;
+}
