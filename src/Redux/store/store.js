@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import tours from "../features/tours/toursSlice";
+import toursRU from "../features/toursRU/toursSlice";
+import toursEN from "../features/toursEN/toursSlice";
 
 
 export const store = configureStore({
     reducer: {
-        tours: tours
+        toursRU: toursRU,
+        toursEN: toursEN,
     }
 })
 
