@@ -92,14 +92,16 @@ export default function CustomizedAccordions() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <div className="container m-auto shadow-md flex items-center justify-between px-4 py-3 border border-[#e5e5e5] bg-[#f7f7f7]">
+      <div className="m-auto shadow-md flex items-center flex-wrap justify-between px-4 py-3 border border-[#e5e5e5] bg-[#f7f7f7] ">
         <p className="text-[1rem">
-          По всем вопросам обращайтесь в мой телеграм
+          По  <span className='max-[465px]:hidden'>всем</span> оставшимся вопросам <span className='max-[465px]:hidden'>обращайтесь в</span> <span className='max-[503px]:hidden'>мой</span> <span className='max-[585px]:hidden'>телеграм</span>
         </p>
+          <a href="https://t.me/fevzie_ablaeva">
         <button className="flex items-center gap-2 rounded px-3 py-1 bg-[#3ba4ec]">
           <p className="text-sm font-semibold text-white">Телеграм</p>
           <FaTelegramPlane color='white' size={18} />
         </button>
+          </a>
       </div>
     </div>
   );

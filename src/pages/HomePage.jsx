@@ -2,17 +2,18 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import Cards from '../Components/Cards';
 import user from '../resources/grandpa.jpeg'
-// import star from '../resources/star.svg'
+import ru from '../resources/russia.svg'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Questions from '../Components/Questions';
-import { FaArrowCircleUp, FaTelegramPlane } from 'react-icons/fa'
+import { FaArrowCircleUp } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+
 export const HomePage = () => {
   const tours = useSelector(state => state.tours.tours)
 
@@ -73,14 +74,18 @@ export const HomePage = () => {
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className='container m-auto flex items-center justify-between'>
             <div className='flex items-center text-white gap-4'>
-              <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10 max-[490px]:hidden' />
+              <img src='https://cdn-icons-png.flaticon.com/512/3942/3942104.png' alt='qwerty' className='h-10 max-[530px]:hidden' />
               <p className='text-xl cursor-pointer'>Tour guide</p>
             </div>
             <nav>
-              <div className='flex gap-5 text-white'>
+              <div className='flex gap-5 text-white items-center'>
                 <p onClick={scrollTour} className='cursor-pointer'>Туры</p>
-                <p onClick={scrollBottom} className='cursor-pointer max-[400px]:hidden'>Вопросы</p>
-                <p onClick={scrollBottom} className='cursor-pointer'>Контакты</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[460px]:hidden'>Вопросы</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[355px]:hidden'>Контакты</p>
+                <div className='flex gap-0 items-center mr-5 cursor-pointer'>
+                  <img src={ru} alt="russia" />
+                  <p>РУ</p>
+                </div>
               </div>
             </nav>
           </div>
@@ -143,7 +148,13 @@ export const HomePage = () => {
         }
       </section>
 
-      <div className='container px-5 m-auto w-[100%]'>
+      <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="500"
+       className='
+      container px-5 m-auto w-[100%]'>
         <Questions />
       </div>
       {
