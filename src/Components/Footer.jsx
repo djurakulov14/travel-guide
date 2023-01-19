@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="flex items-center justify-center gap-10 max-[360px]:flex-col max-[360px]:gap-5">
         <div className="flex items-center gap-2 ">
           <p className="text-xl font-medium max-sm:text-sm">{t("contacts")}</p>
-          <p className="text-xl font-bold max-sm:text-sm">+998901234567</p>
+          <p className="text-xl font-bold max-sm:text-sm">+998 90 251 71 81</p>
         </div>
         <div className="flex items-center gap-2 flex-col">
           <div className="flex gap-4 max-md:gap-2">
@@ -47,7 +47,7 @@ const Footer = () => {
               </svg>
               <span className="sr-only">Instagram page</span>
             </a>
-            <a href="esdsdfs" className="text-gray-400 hover:text-[#3ba4ec]">
+            <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaTelegram size={30} />
               <span className="sr-only">Telegram page</span>
             </a>
