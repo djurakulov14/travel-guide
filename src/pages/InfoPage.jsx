@@ -10,10 +10,10 @@ import { useTranslation } from 'react-i18next'
 export const InfoPage = () => {
     const takeHeigth = useRef(null)
     window.scrollTo(0, 0);
-    let {pathname} = useLocation()
-    let splited = pathname.split(':').at(-1)
+    let splited = useLocation().state
 	const navigate = useNavigate();
     const { t } = useTranslation()
+
 
     const currentLGN = useTranslation()[1].language
     
