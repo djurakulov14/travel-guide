@@ -11,7 +11,9 @@ export const InfoPage = () => {
     const takeHeigth = useRef(null)
     window.scrollTo(0, 0);
     let {pathname} = useLocation()
+    const router = useLocation()
     let splited = pathname.split(':').at(-1)
+    console.log(router);
 	const navigate = useNavigate();
     const { t } = useTranslation()
 
