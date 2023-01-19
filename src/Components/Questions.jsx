@@ -100,7 +100,7 @@ export default function CustomizedAccordions() {
         </p>
           <a href="https://t.me/fevzie_ablaeva">
         <button className="flex items-center gap-2 rounded px-3 py-1 bg-[#3ba4ec]">
-          <p className="text-sm font-semibold text-white">Телеграм</p>
+          <p className="text-sm font-semibold text-white capitalize">{t('Telega6')}</p>
           <FaTelegramPlane color='white' size={18} />
         </button>
           </a>

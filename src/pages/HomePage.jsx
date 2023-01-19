@@ -35,8 +35,8 @@ export const HomePage = () => {
     });
   };
   const scrollTour = () => {
-    window.scrollTo({ left: 0, top: 1280, behavior: "smooth" });
-  };
+    window.scrollTo({ left: 0, top: 1100, behavior: "smooth" });
+  }
   const scrollTour2 = () => {
     window.scrollTo({ left: 0, top: 1140, behavior: "smooth" });
   };
@@ -95,36 +95,12 @@ export const HomePage = () => {
               <p className="text-xl cursor-pointer">Tour guide</p>
             </div>
             <nav>
-              <div className="flex gap-5 text-white items-center">
-                <p
-                  onClick={scrollTour}
-                  className="cursor-pointer max-[580px]:hidden"
-                >
-                  Туры
-                </p>
-                <p
-                  onClick={scrollBottom}
-                  className="cursor-pointer max-[580px]:hidden"
-                >
-                  Вопросы
-                </p>
-                <p
-                  onClick={scrollBottom}
-                  className="cursor-pointer max-[580px]:hidden"
-                >
-                  Контакты
-                </p>
-                <div
-                  onClick={() =>
-                    ChangeLanguage(currentLNG === "en" ? "ru" : "en")
-                  }
-                  className="flex gap-1 items-center mr-5 cursor-pointer"
-                >
-                  <img
-                    className=" w-6"
-                    src={currentLNG === "en" ? us : ru}
-                    alt="language"
-                  />
+              <div className='flex gap-5 text-white items-center'>
+                <p onClick={scrollTour} className='cursor-pointer max-[580px]:hidden'>{t("toursText")}</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>{t("QuestionText")}</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>{t("ContactsText")}</p>
+                <div onClick={() => ChangeLanguage(currentLNG === "en" ? "ru" : "en")} className='flex gap-1 items-center mr-5 cursor-pointer'>
+                  <img className=' w-6' src={currentLNG === "en" ? us : ru} alt="language" />
                   <p>{currentLNG === "en" ? "EN" : "РУ"}</p>
                 </div>
               </div>

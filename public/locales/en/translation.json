@@ -5,6 +5,9 @@
     "text3": "Make new friends",
     "me": "About me",
     "close": "Close",
+    "toursText": "Tours",
+    "QuestionText": "Questions",
+    "ContactsText": "Contacts",
     "infoText": "Hello everyone from Uzbekistan. My name is Victoria. I am an experienced professional tour guide. For more than 20 years, I have been conducting tours in Russian and German. I was born in Samarkand and I love my city and I want to share this love with you. My excursions are",
     "readMore": "read more",
     "ActualTours": "Actual tours",
@@ -22,7 +25,7 @@
     "infoh1": "What's waiting for you :",
     "stick": {
         "title": "Individual excursion for 1-4 people",
-        "durationH1": "Duration",
+        "durationH1": "Duration :",
         "time": "6 hours",
         "priceIncTitle": "The price includes :",
         "priceinc1": "Tour with a guide",
