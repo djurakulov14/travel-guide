@@ -136,7 +136,7 @@ export const HomePage = () => {
               <li className="text-xl max-lg:text-base">- {t("text2")}</li>
               <li className="text-xl max-lg:text-base">- {t("text3")}</li>
             </ul>
-            <div className="flex max-[639px]:justify-center">
+            <div className="select-none flex max-[639px]:justify-center">
               <button
                 className="p-2 rounded-full bg-[#3ba4ec] animate-bounce mt-10"
                 onClick={scrollTour2}
