@@ -89,9 +89,9 @@ export const HomePage = () => {
             </div>
             <nav>
               <div className='flex gap-5 text-white items-center'>
-                <p onClick={scrollTour} className='cursor-pointer'>Туры</p>
-                <p onClick={scrollBottom} className='cursor-pointer max-[460px]:hidden'>Вопросы</p>
-                <p onClick={scrollBottom} className='cursor-pointer max-[355px]:hidden'>Контакты</p>
+                <p onClick={scrollTour} className='cursor-pointer max-[580px]:hidden'>Туры</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>Вопросы</p>
+                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>Контакты</p>
                 <div onClick={() => ChangeLanguage(currentLNG === "en" ? "ru" : "en")} className='flex gap-1 items-center mr-5 cursor-pointer'>
                   <img className=' w-6' src={currentLNG === "en" ? us : ru} alt="language" />
                   <p>{currentLNG === "en" ? "EN" : "РУ"}</p>
@@ -115,11 +115,13 @@ export const HomePage = () => {
               <li className='text-xl max-lg:text-base'>- {t("text2")}</li>
               <li className='text-xl max-lg:text-base'>- {t("text3")}</li>
             </ul>
+            <div className='flex max-[639px]:justify-center'>
             <button className='p-2 rounded-full bg-[#3ba4ec] animate-bounce mt-10' onClick={scrollTour2}>
               <svg className=" w-9 h-9 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
               </svg>
             </button>
+            </div>
           </div>
         </section>
         <div className="w-[100%] bg-[#3ba4ec] h-14"></div>
@@ -141,7 +143,10 @@ export const HomePage = () => {
         </div>
         <div id='tours' className='mb-10'></div>
         <div className='mb-5'>
-          <h1 className='text-3xl font-medium text'>{t("ActualTours")}</h1>
+          <h1 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="500" className='text-3xl font-medium text'>{t("ActualTours")}</h1>
         </div>
       </div>
       <section className='container m-auto px-5 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5 mb-10'>
