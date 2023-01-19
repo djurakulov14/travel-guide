@@ -117,7 +117,7 @@ export const HomePage = () => {
             </ul>
             <div className='flex max-[639px]:justify-center'>
             <button className='p-2 rounded-full bg-[#3ba4ec] animate-bounce mt-10' onClick={scrollTour2}>
-              <svg className=" w-9 h-9 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className=" w-9 h-9 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
               </svg>
             </button>

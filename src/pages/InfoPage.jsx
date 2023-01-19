@@ -43,7 +43,7 @@ export const InfoPage = () => {
                     <div ref={takeHeigth} className="relative plcesss flex flex-col gap-4 mb-14 max-md:before:hidden before:absolute before:top-0 before:-left-5 before:h-[95%] before:w-[5px] before:rounded-full before:bg-[#3ba4ec]">
                     {
                         info.places.map(item =>  
-                        <div className="places w-[95%] max-lg:w-full relative">
+                        <div key={item.id} className="places w-[95%] max-lg:w-full relative">
                             <h1 key={item.id} className=' text-xl font-bold'>{item.title}</h1>
                             <div key={item.id} className="infoCont flex gap-2 h-28 max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:before:hidden max-md:h-fit before:absolute before:top-3 before:-left-[25px] before:w-4 before:h-4 before:shadow-xl before:bg-white before:rounded-full">
                                 <p key={item.id} className='text-ellipsis text-xl max-xl:mb-3 max-lg:text-lg max-md:text-base'>{item.body}</p>
