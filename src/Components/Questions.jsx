@@ -57,14 +57,11 @@ export default function CustomizedAccordions() {
       <h1 className='text-3xl mb-5 max-lg:text-xl max-sm:text-sm'>{t("Answers")}</h1>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Collapsible Group Item #1</Typography>
+          <Typography>{t("question1")}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+            {t("questionAnswer1")}
           </Typography>
         </AccordionDetails>
       </Accordion>
