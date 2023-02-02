@@ -24,9 +24,13 @@
     "infoSubTitle": "Explore the main masterpieces of architecture, hear stories from the past and experience the twilight magic of the East",
     "infoh1": "What's waiting for you :",
     "stick": {
-        "title": "Individual excursion for 1-4 people",
+        "title": "Individual excursion for 1-6 people",
         "durationH1": "Duration :",
         "time": "6 hours",
+        "childH1": "Children :",
+        "child": "Allowed with children",
+        "howH1": "How goes :",
+        "how": "on foot",
         "priceIncTitle": "The price includes :",
         "priceinc1": "Tour with a guide",
         "priceinc2": "Enterance tickets",
@@ -35,6 +39,11 @@
         "price1": "1 person by 100$",
         "price2": "2 people by 65$",
         "price3": "3 people by 55$",
-        "button": "Book"
+        "button": "Book",
+        "priceInfo": "Price for 1-6 people, regardless of the number of participants",
+        "details": "Organizational details",
+        "onlySam": "At your request, you can additionally organize a wine tasting in the house of a merchant Filatov of the 19th century and a master class on the preparation of pilaf. Please specify the price in a personal message.",
+        "byWhat1": "The excursion can be fully pedestrian or with the use of transport (optional). The surcharge will be depending on the brand of car.",
+        "byWhat2": "The supplement for cars (up to 3 people) will be $ 40, minivan (up to 6 people) - $ 60."
     }
 }

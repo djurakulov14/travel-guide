@@ -6,6 +6,13 @@ import "swiper/css/navigation";
 import { BiLeftArrowAlt } from 'react-icons/bi';
 import kalpok from "../resources/kalpok.png"
 import { useTranslation } from 'react-i18next'
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+
 
 export const InfoPage = () => {
     const takeHeigth = useRef(null)
@@ -20,6 +27,29 @@ export const InfoPage = () => {
     const toursRU = useSelector(state => state.toursRU.tours)
     const info = currentLGN === "en" ? toursEN.filter(item => item.id === +splited)[0] : toursRU.filter(item => item.id === +splited)[0]
     
+
+    const [open, setOpen] = React.useState(false);
+    const [scroll, setScroll] = React.useState("paper");
+
+    const handleClickOpen = (scrollType) => {
+        setOpen(true);
+        setScroll(scrollType);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const descriptionElementRef = React.useRef(null);
+    React.useEffect(() => {
+        if (open) {
+        const { current: descriptionElement } = descriptionElementRef;
+        if (descriptionElement !== null) {
+            descriptionElement.focus();
+        }
+        }
+    }, [open]);
+
+
     //  
     return (
         <>
@@ -45,7 +75,7 @@ export const InfoPage = () => {
                         <div key={item.id} className="places w-[95%] max-lg:w-full relative">
                             <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
                             <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:before:hidden max-md:h-fit before:absolute before:top-3 before:-left-[25px] before:w-4 before:h-4 before:shadow-xl before:bg-white before:rounded-full">
-                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm'>{item.body}</p>
+                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
                                 <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                             </div>
                         </div>)
@@ -60,7 +90,7 @@ export const InfoPage = () => {
                             <div key={item.id} className="places w-[95%] max-lg:w-full relative">
                                 <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
                                 <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block">
-                                    <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm'>{item.body}</p>
+                                    <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
                                     <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                                 </div>
                             </div>
@@ -79,27 +109,85 @@ export const InfoPage = () => {
                             <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
                             <p>{t("stick.time")}</p>
                         </div>
-                        <div className="duration flex flex-col justify-between mb-3">
+                        <div className="duration flex justify-between mb-3">
+                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
+                            <p>{t("stick.child")}</p>
+                        </div>
+                        <div className="duration flex justify-between mb-3">
+                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.howH1")}</h1>
+                            <p>{t("stick.how")}</p>
+                        </div>
+                        {/* <div className="duration flex flex-col justify-between mb-3">
                             <h1 className=' font-bold max-xl:font-semibold'>{t("stick.priceIncTitle")}</h1>
                             <p>{t("stick.priceinc1")}</p>
                             <p>{t("stick.priceinc2")}</p>
                             <p>{t("stick.priceinc3")}</p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="bot pt-3">
-                        <div className="prices flex flex-col justify-between">
+                        <div className="prices flex justify-between">
                         <h1 className='font-bold'>{t("stick.price")}</h1>
-                            <div className="ps">
-                                <p>{t("stick.price1")}</p>
-                                <p>{t("stick.price2")}</p>
-                                <p>{t("stick.price3")}</p>
-                            </div>
+                        <p className='font-bold text-lg' >60 $</p>
                         </div>
+                        <span onClick={() => handleClickOpen("paper")} className=' underline cursor-pointer text-sky-700 hover:text-white'>{t("readMore")}. . .</span>
                         <a href="https://t.me/fevzie_ablaeva"><button className='w-full bg-[#00000030] p-3 rounded-lg text-center mt-2'>{t("stick.button")}</button></a>
                     </div>
                 </div>
                 </div>
         </section>
+        <div className="fixed inset-x-1/2 trn">
+            {open ? (
+            <div>
+                <Dialog
+                open={open}
+                onClose={handleClose}
+                scroll={scroll}
+                aria-labelledby="scroll-dialog-title"
+                aria-describedby="scroll-dialog-description"
+                >
+                <DialogTitle id="scroll-dialog-title">{t("stick.details")}</DialogTitle>
+                <DialogContent dividers={scroll === "paper"}>
+                    <DialogContentText
+                    id="scroll-dialog-description"
+                    ref={descriptionElementRef}
+                    tabIndex={-1}
+                    >
+                     <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.title")}</h1>
+                        <div className="duration flex justify-between mb-3">
+                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
+                            <p>{t("stick.time")}</p>
+                        </div>
+                        <div className="duration flex justify-between mb-3">
+                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
+                            <p>{t("stick.child")}</p>
+                        </div>
+                        <div className="duration flex justify-between mb-3">
+                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.howH1")}</h1>
+                            <p>{t("stick.how")}</p>
+                        </div>
+                        <div className="prices flex justify-between">
+                            <h1 className='font-bold'>{t("stick.price")}</h1>
+                            <p className='font-bold text-lg' >60 $</p>
+                        </div>
+                        <p className='font-bold max-xl:font-semibold mb-5' >{t("stick.priceInfo")}</p>
+                    <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.details")}</h1>
+                    <h1 className=' font-bold max-xl:font-semibold mb-2'>{t("stick.byWhat1")}</h1>
+                    <h1 className=' font-bold max-xl:font-semibold mb-5'>{t("stick.byWhat2")}</h1>
+                    {
+                        info.title.includes("Samarkand") || info.title.includes("Самарканд") ? 
+                        <h1 className=' font-bold max-xl:font-semibold'>{t("stick.onlySam")}</h1>
+                        :
+                        null
+                    }
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose}>{t("close")}</Button>
+                </DialogActions>
+                </Dialog>
+            </div>
+            ) : null}
+      </div>
     </>
     )
 }
