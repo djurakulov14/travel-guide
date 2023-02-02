@@ -75,7 +75,7 @@ export const InfoPage = () => {
                         <div key={item.id} className="places w-[95%] max-lg:w-full relative">
                             <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
                             <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:before:hidden max-md:h-fit before:absolute before:top-3 before:-left-[25px] before:w-4 before:h-4 before:shadow-xl before:bg-white before:rounded-full">
-                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm'>{item.body}</p>
+                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
                                 <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                             </div>
                         </div>)
@@ -90,7 +90,7 @@ export const InfoPage = () => {
                             <div key={item.id} className="places w-[95%] max-lg:w-full relative">
                                 <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
                                 <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block">
-                                    <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm'>{item.body}</p>
+                                    <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
                                     <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                                 </div>
                             </div>
