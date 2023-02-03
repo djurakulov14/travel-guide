@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 flex-col">
           <div className="flex items-center gap-4 max-md:gap-2">
-            <p className="text-xl font-medium max-sm:text-sm">Телеграм</p>
+            <p className="text-xl font-medium max-sm:text-sm">{t("footerTelega")}</p>
             <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaTelegram size={30} />
               <span className="sr-only">Telegram page</span>
@@ -24,10 +24,10 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-aut lg:my-8" />
       <span className="block text-sm text-gray-500 sm:text-center">
-        © 3{""}
-        <a href="#0" className="hover:underline">
+        ©
+        <span className="hover:underline">
           Viktoriya™
-        </a>
+        </span>
         . All Rights Reserved.
       </span>
     </footer>
