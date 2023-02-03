@@ -57,7 +57,7 @@ export const InfoPage = () => {
         className="overflow-hidden w-full bg-cover bg-center mb-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[500px]:mb-0 max-[400px]:h-[250px] ">
             <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px] after:absolute after:inset-0 after:bg-[rgba(0,0,0,.5)] after:z-[2]"><img className='w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px] object-cover' src={info.img2} alt="" /></div>
             <div className='m-auto container text-white pt-48 max-[680px]:pt-14 max-[680px]:py-5 max-[500px]:py-3 px-6'>
-                <h1 className='text-5xl font-bold mb-10 max-[500px]:mb-5 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl max-[500px]:mt-10'>{info.title}</h1>
+                <h1 className='text-5xl font-bold mb-10 max-[500px]:mb-5 max-[680px]:text-3xl max-sm:text-4xl max-[500px]:text-2xl max-[500px]:mt-10 max-[450px]:text-xl'>{info.title}</h1>
                 <p className=" text-4xl font-medium max-[680px]:text-3xl max-[500px]:text-xl  max-[390px]:text-base " >{t("infoSubTitle")}</p>
                 <BiLeftArrowAlt className=' absolute top-2' onClick={() => navigate(-1)} size={40}/>
             </div>
@@ -73,9 +73,9 @@ export const InfoPage = () => {
                     {
                         info.places.map(item =>  
                         <div key={item.id} className="places w-[95%] max-lg:w-full relative">
-                            <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
+                            <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg max-[450px]:text-base'>{item.title}</h1>
                             <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:before:hidden max-md:h-fit before:absolute before:top-3 before:-left-[25px] before:w-4 before:h-4 before:shadow-xl before:bg-white before:rounded-full">
-                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
+                                <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs max-[360px]:text-[10px]'>{item.body}</p>
                                 <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                             </div>
                         </div>)
@@ -88,9 +88,9 @@ export const InfoPage = () => {
                             {
                                 info.extraPlaces.map(item =>  
                                     <div key={item.id} className="places w-[95%] max-lg:w-full relative">
-                                        <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg'>{item.title}</h1>
+                                        <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg max-[450px]:text-base'>{item.title}</h1>
                                         <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block">
-                                            <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs'>{item.body}</p>
+                                            <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs max-[360px]:text-[10px]'>{item.body}</p>
                                             <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
                                         </div>
                                     </div>
@@ -153,30 +153,30 @@ export const InfoPage = () => {
                     ref={descriptionElementRef}
                     tabIndex={-1}
                     >
-                     <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.title")}</h1>
+                     <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-base max-[30px]:w-full'>{t("stick.title")}</h1>
                         <div className="duration flex justify-between mb-3">
-                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
-                            <p>{t("stick.time")}</p>
+                            <h1 className=' font-bold max-xl:font-semibold max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.durationH1")}</h1>
+                            <p className='max-[400px]:text-xs'>{t("stick.time")}</p>
                         </div>
                         <div className="duration flex justify-between mb-3">
                             <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
-                            <p>{t("stick.child")}</p>
+                            <p className='max-[400px]:text-xs'>{t("stick.child")}</p>
                         </div>
                         <div className="duration flex justify-between mb-3">
                             <h1 className=' font-bold max-xl:font-semibold'>{t("stick.howH1")}</h1>
-                            <p>{t("stick.how")}</p>
+                            <p className='max-[400px]:text-xs'>{t("stick.how")}</p>
                         </div>
                         <div className="prices flex justify-between">
-                            <h1 className='font-bold'>{t("stick.price")}</h1>
-                            <p className='font-bold text-lg' >60 $</p>
+                            <h1 className='font-bold max-[400px]:text-sm max-[400px]:font-semibold'>{t("stick.price")}</h1>
+                            <p className='font-bold text-lg max-[400px]:text-base max-[400px]:font-medium' >60 $</p>
                         </div>
                         <p className='font-bold max-xl:font-semibold mb-5' >{t("stick.priceInfo")}</p>
-                    <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.details")}</h1>
-                    <h1 className=' font-bold max-xl:font-semibold mb-2'>{t("stick.byWhat1")}</h1>
-                    <h1 className=' font-bold max-xl:font-semibold mb-5'>{t("stick.byWhat2")}</h1>
+                    <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.details")}</h1>
+                    <h1 className=' font-bold max-xl:font-semibold mb-2 max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.byWhat1")}</h1>
+                    <h1 className=' font-bold max-xl:font-semibold mb-5 max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.byWhat2")}</h1>
                     {
                         info.title.includes("Samarkand") || info.title.includes("Самарканд") ? 
-                        <h1 className=' font-bold max-xl:font-semibold'>{t("stick.onlySam")}</h1>
+                        <h1 className=' font-bold max-xl:font-semibold max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.onlySam")}</h1>
                         :
                         null
                     }
