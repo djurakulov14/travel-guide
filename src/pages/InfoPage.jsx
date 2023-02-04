@@ -73,7 +73,7 @@ export const InfoPage = () => {
                             {
                                 info.places.map(item =>
                                     <div key={item.id} className="places w-[95%] max-lg:w-full relative">
-                                        <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg max-[450px]:text-base mt-10 mb-3'>{item.title}</h1>
+                                        <h1 key={item.id} className=' text-xl font-bold max-sm:text-lg max-[450px]:text-base mt-10 mb-3 max-md:mt-5 max-md:mb-2'>{item.title}</h1>
                                         <div key={item.id} className=" flex justify-between h-fit max-[700px]:flex-col max-[820px]:gap-0 max-md:block max-md:before:hidden max-md:h-fit before:absolute before:top-11 before:-left-[25px] before:w-4 before:h-4 before:shadow-xl before:bg-white before:rounded-full gap-5 ">
                                             <p key={item.id} className='text-ellipsis text-lg max-xl:mb-3 max-lg:text-base max-md:text-sm max-[450px]:text-xs max-[360px]:text-[10px]'>{item.body}</p>
                                             <img key={item.id} src={item.img} alt={item.title} className=" rounded-xl w-[25%] h-[15%] max-md:w-full" />
@@ -102,7 +102,7 @@ export const InfoPage = () => {
                         }
                     </div>
                     <div
-                        className="right stic h-fit w-1/3 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full">
+                        className="right stic h-fit w-1/3 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full max-md:mt-10">
                         <img src={kalpok} className=' w-24 absolute -top-5 -right-3 rotate-[25deg]' alt="Тюбитейка" />
                         <div className="top border-b border-white">
                             <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.title")}</h1>
