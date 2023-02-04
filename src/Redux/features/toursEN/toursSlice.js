@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import bukhara from '../../../resources/bukhara.jpg'
 import bukhara2 from '../../../resources/bukhara2.jpg'
 import xiva from '../../../resources/khiva2.jpg'
-import xiva2 from '../../../resources/night-khiva.jpeg'
-import tash from '../../../resources/night-tash.jpeg'
-import tash2 from '../../../resources/tashkent-amir-timur-square.webp'
+import xiva2 from '../../../resources/xiva2.jpg'
+import tash from '../../../resources/tashkent.jpg'
+import tash2 from '../../../resources/tashkent.png'
 import vino from '../../../resources/vino.png'
 import donior from '../../../resources/donior.png'
 import bumaga from '../../../resources/bumaga.png'
@@ -41,12 +41,14 @@ import kukeldash from '../../../resources/kukeldash.png'
 import gosmuzeyP from '../../../resources/gosmuzeyP.png'
 import amirT from '../../../resources/amirT.png'
 import shaxrisabs from '../../../resources/shaxrisabs.png'
+import samarkand from '../../../resources/samarkand.jpg'
 import gurEmir from '../../../resources/gurEmir.png'
 import registan from '../../../resources/registan.png'
 import Shaxi from '../../../resources/Shaxi.png'
 import siyab from '../../../resources/siyab.png'
 import bibi from '../../../resources/bibi.png'
 import ulugbek from '../../../resources/ulugbek.png'
+
 
 const initialState = {
     tours: [
@@ -56,7 +58,7 @@ const initialState = {
             body: "Samarkand - one of the oldest cities in the world, founded, according to archaeological data, in the middle of the 8th century B.C. (Ancient Marakand), the capital of the state of Timurids, became the first capital of Soviet Uzbekistan in 1924. For more than two millennia, the city has been a key point on the Silk Road between China and Europe, as well as a major center.",
             price: "100$",
             img: "http://www.opts.tours/images/slider/slide3.jpg",
-            img2: "http://www.opts.tours/images/slider/slide3.jpg",
+            img2: samarkand,
             places: [
                 {title:"Gur Emir mausoleum", img: gurEmir, body: "Gur-Emir «Tomb of the Emir» - Mausoleum of Tamerlan (Amir Timur), his mentor Mir Sayyid Barak, and some members of the Timur family - (Timurids) in Samarkand.  Built on Timur’s initiative and with funds in 1403, the masterpiece of Persian architecture of the Timurid era occupies an important place in the history of world Islamic architecture. The main architect of the mausoleum was Mahmud Isfahani, an Iranian town."},
                 {title:"Registan square", img: registan, body: "Registan Square is a square in the center of Samarkand. «Registan» called the main squares in the cities of the Middle East. Samarkand Square is the most famous Registan thanks to the famous architectural ensemble located on it, the center of which are the madrassa Ulugbek (1417-1420), madrasah Sherdor (1619-1636) and madrassah Tilla-Kari (1646-1660). The ensemble of three madrasahs is a unique example of urban art and a remarkable example of architectural design of the main square of the city. It is one of the brightest examples of Islamic architecture."},
