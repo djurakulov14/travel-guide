@@ -66,7 +66,7 @@ export const InfoPage = () => {
                 <div className="m-auto container max-[680px]:py-5 flex gap-1 max-lg:block px-6">
                     <div className="w-3/4 max-lg:w-full max-lg:mb-5 ">
                         <p
-                            className=' text-xl mb-10 w-[95%] max-sm:text-base'>{info.body}</p>
+                            className=' text-xl mb-10 w-[95%] max-sm:text-base'>{info?.body}</p>
                         <h1
                             className=' text-2xl font-bold mb-5 max-sm:text-lg'>{t("infoh1")}</h1>
                         <div ref={takeHeigth} className="relative plcesss flex flex-col gap-4 mb-14 max-md:before:hidden before:absolute before:top-0 before:-left-5 before:h-[95%] before:w-[5px] before:rounded-full before:bg-[#3ba4ec]">
