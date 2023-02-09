@@ -174,8 +174,8 @@ const initialState = {
             title: "Tour 'Navruz'",
             body: "Ask any Uzbek, whether old or young, about the warmest and favorite holidays. And, most often, you will hear the answer: «Nowruz». What is this holiday? And why is it so loved by indigenous people and guests of the country? ",
             price: "100$",
-            img: mXimam,
-            img2: "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/da19747169d87b7b39d0863c38c9bf88/",
+            img: "https://mice-uzbekistan.uz/wp-content/uploads/2017/02/1457161064_984.jpg",
+            img2: "https://mice-uzbekistan.uz/wp-content/uploads/2017/02/1457161064_984.jpg",
             places: [
                 {title: "Day 1 Tashkent 18.03.2023", img: tash2, body: "Meeting at the airport of Tashkent, accommodation in the hotel. 15:00 Transfer to the hotel. 18:00 Evening walk in Tashkent. 20:00 Dinner in the restaurant."},
                 {title: "Day 2 Walking in Tashkent.19.03.2023", img: kukeldash, body: "9:00 Breakfast. At 10:00 excursion on «Old City»: Khast-Imam square, Barak-Khan madrassah, Kafal-al-Shashi Mazar mausoleum, Kukeldash madrassah, the oldest bazaar of Tashkent - Chorsu.  Excursion to the modern part of Tashkent: Independence Square, Amir Temur Square."},
