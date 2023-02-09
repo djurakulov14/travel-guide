@@ -150,6 +150,39 @@ const initialState = {
                 {title: "National Museum of Applied Arts", img: gosmuzeyP, body:"It was founded in 1937 on the basis of a temporary exhibition of handicrafts. The Museum’s collections contain more than 4,000 exhibits that reveal the history of decorative art in Uzbekistan: wood carving, ceramics, coinage, jewellery,  embroiderers, samples of mass production of local industry. Until the beginning of the 21st century, the museum was located in the former palace of the Russian diplomat A. A. Polovtsev. The building was purchased for A. A. Polovtsev by his secretary M. S. Andreev on his behalf from the Tashkent merchant Ivanov. This house was known in Tashkent as the «house of Polovtsev»."},
                 {title: "Amir Temur Square", img: amirT, body:"The history of the square in the center of Tashkent, which today bears the name of the commander and founder of a huge medieval empire - Amir Timur, began in the XIX century, when Tashkent became the center of the Turkestan Military District within the Russian Empire. It was laid by order of General M. Chernyaev in 1882. The square was a small park in the center of the city, surrounded by buildings of the gymnasium for women and men, a teacher’s seminary and a state bank."},
             ]
+        },
+        {
+            id: 6,
+            title: "Tour the cities of the great silk road",
+            body: "In 1994, Samarkand adopted a declaration 'On the revival of the Silk Road'. The main route crosses 32 large and small cities of Central Asia. Tashkent, Samarkand, Bukhara, Khiva and the cities of the Fergana valley are precious stones of the Silk Road.",
+            price: "100$",
+            img: tash,
+            img2: "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/da19747169d87b7b39d0863c38c9bf88/",
+            places: [
+                {title:"Day 1 Tashkent", img: tash2, body: "Встреча в аэропорту Ташкента, размещение в гостинице."},
+                {title:"Day 2 Tashkent", img: kukeldash, body: "At 10.00 - excursion to «Old City»: Khast-Imam Square, Barak-Khan Madrassah, Kafal-al-Shashi Mazar Mausoleum, Kukeldash Madrassah, Tashkent’s oldest bazaar - Chorsu. Excursion to the modern part of Tashkent:  Museum of Applied Arts ,  Independence Square, Amir Temur Square. Night in hotel."},
+                {title: "Day 3 Tashkent - Samarkand . Samarkand (excursion).", img: registan, body:"Breakfast in the hotel. Transfer to Samarkand. At 11:00, a tour of Samarkand: the most famous area of Central Asia - Registan (madrassah Ulugbek, madrassah Sher-Dor, madrassah Till-Kari), mausoleum Gur-Emir - tomb of Grand Tamerlan. In the afternoon, the continuation of the tour of Samarkand: Bibi-Khanum Mosque, architectural ensemble of Shahi-Zinda, Ulugbek Observatory. Night in the hotel."},
+                {title: "Day 4 Samarkand - Gijduvan - Bukhara. Bukhara (excursion).", img: labiXauz, body:"Transfer and accommodation in a hotel. After lunch, a tour of Bukhara: visit to the Lyabi-Hauz Ensemble, Kukeldash Madrassa, Nadir Divanbegi Madrassa, shopping domes, Samanid Mausoleum, Chashma Ayub Tomb, Bolo-Haus Complex, Ancient Ark Fortress, Poy-Kalyan Complex. Dinner at the national house - master class on cooking pilaf. Night in the hotel."},
+                {title: "Day 5 Bukhara ", img: ark, body:"Breakfast in the hotel. Continuation of the tour of ancient Bukhara. Free time"},
+                {title: "Day 6 Bukhar - Khiva (bus 440 km).", img: "http://sreda.uz/wp-content/uploads/posts/2015-11/1447435571_img_5433.jpg", body:"Breakfast in the hotel. At 08:00 transfer through the famous desert Kyzylkum along the Amu Darya River.  Picnic on the way. Arrival in Khiva. Free time, visiting souvenir shops and workshops. Overnight in the hotel."},
+                {title: "Day 7 Khiva (excursion).", img: "https://canaan.travel/wp-content/uploads/2020/12/ichan-kala.jpg", body:"Hotel Breakfast. At 09:00 - tour of Khiva (Ichan-Kale - inner city): Pakhlavan Mahmud complex, fortress of Kunya-Arkh, madrassah and minaret of Islam Khoja, Tash Khauli palace, madrassah of Alakuli Khan, Mosque of Juma, minaret and madrassah of Muhammad Amin.  Night in the Hotel."},
+                {title: "Day 8 Khiva - Urgench", img: "https://gulaytour.ru/wp-content/uploads/2017/07/1494142.jpg", body:"Transfer to Urgench International Airport. Departure from Urgench. Completion of the tour program."},
+            ]
+        },
+        {
+            id: 7,
+            title: "Tour 'Navruz'",
+            body: "Ask any Uzbek, whether old or young, about the warmest and favorite holidays. And, most often, you will hear the answer: «Nowruz». What is this holiday? And why is it so loved by indigenous people and guests of the country? ",
+            price: "100$",
+            img: mXimam,
+            img2: "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/da19747169d87b7b39d0863c38c9bf88/",
+            places: [
+                {title: "Day 1 Tashkent 18.03.2023", img: tash2, body: "Meeting at the airport of Tashkent, accommodation in the hotel. 15:00 Transfer to the hotel. 18:00 Evening walk in Tashkent. 20:00 Dinner in the restaurant."},
+                {title: "Day 2 Walking in Tashkent.19.03.2023", img: kukeldash, body: "9:00 Breakfast. At 10:00 excursion on «Old City»: Khast-Imam square, Barak-Khan madrassah, Kafal-al-Shashi Mazar mausoleum, Kukeldash madrassah, the oldest bazaar of Tashkent - Chorsu.  Excursion to the modern part of Tashkent: Independence Square, Amir Temur Square."},
+                {title: "Day 3 Tashkent - Samarkand . Samarkand (excursion). 20.03.2023.", img: registan, body:"7:00 Breakfast at the hotel.  Transfer to Samarkand. At 11:00, a tour of Samarkand: the most famous area of Central Asia - Registan (madrassah Ulugbek, madrassah Sher-Dor, madrassah Till-Kari), mausoleum Gur-Emir - tomb of Grand Tamerlan.  In the afternoon, continuation of the tour of Samarkand: Bibi-Khanum Mosque, Shahi-Zinda Architectural Ensemble, Ulugbek Observatory. Folk festivities in honor of the holiday Navruz. Night in the hotel."},
+                {title: "Day 4 Transfer Samarkand - Bukhara. Bukhara (excursion). 21.03.2023", img: labiXauz, body:"9:00 Breakfast in the hotel. Transfer to Bukhara.  12:00 Hotel accommodation. 14:00 After lunch tour of Bukhara: visit to the Lyabi-Hauz Ensemble, Kukeldash Madrassa, Nadir Divanbegi Madrassah, shopping domes, Samanid Mausoleum, Chashma Ayub Tomb, Bolo-Haus Complex, Arch Ancient Fortress Complex, Poy-Kalyan Complex 18 -00 at National House master class on cooking pilaf. Night in the Hotel."},
+                {title: "Day 5 Bukhara 22.03.2023", img: ark, body:"9:00 Breakfast at the hotel.  Country residence of the Emir of Bukhara Suzana Obed Workshop. Transfer to the airport."},
+            ]
         }
     ]
 }
