@@ -70,7 +70,7 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 7 !important;
+  -webkit-line-clamp: 5 !important;
   -webkit-box-orient: vertical;
 }
 .cont-n2 {
@@ -78,6 +78,14 @@ body {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical;
+}
+
+.trun {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical;
 }
 

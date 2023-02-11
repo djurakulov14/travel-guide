@@ -198,7 +198,7 @@ export const HomePage = () => {
           </h1>
         </div>
       </div>
-      <section className="container m-auto px-5 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5 mb-10">
+      <section className="container m-auto max-md:px-5 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5 mb-10">
         {tours.map((i) => (
           <Cards item={i} key={i.id} />
         ))}
