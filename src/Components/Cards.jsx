@@ -7,23 +7,25 @@ const Cards = ({ item }) => {
     AOS.init({
         once: true
     })
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const navigate = useNavigate("/info");
 
-	const changePage = () => {
-		navigate("/info/:"+ item.id, {state: item.id});
-	};
+    const changePage = () => {
+        navigate("/info/:" + item.id, { state: item.id });
+    };
 
     return (
         <div onClick={changePage}
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="500" className="cont-n hover:drop-shadow-2xl transition ease-in max-sm:w-full m-auto bg-white border border-gray-200 rounded-lg shadow-md">
-            <img className="rounded-t-lg" src={item.img} alt="" />
+            data-aos-duration="500" className="cont-n hover:drop-shadow-2xl transition ease-in w-full m-auto bg-white border border-gray-200 rounded-lg shadow-md">
+            <div className="rounded-t-lg h-52 max-xl:h-36 max-md:h-32 max-sm:h-full bg-red-300 overflow-hidden">
+                <img className=" object-cover w-full" src={item.img} alt="" />
+            </div>
             <div className="p-5">
-                <h5 className="mb-2 text-2xl max-lg:text-lg font-bold tracking-tight text-dark">{item.title}</h5>
+                <h5 className="mb-2 text-2xl max-lg:text-lg font-bold tracking-tight text-dark trun">{item.title}</h5>
                 <p className=" cont-n mb-3 font-normal text-gray-700 dark:text-gray-400 ">{item.body}</p>
                 <button className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#3ba4ec] rounded-lg hover:bg-[#1f97e7] focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                     {t("moreInfoBtn")}
