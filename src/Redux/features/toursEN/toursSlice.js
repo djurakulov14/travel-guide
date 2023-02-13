@@ -56,7 +56,7 @@ const initialState = {
             id: 1,
             title: "Tour in Samarkand",
             body: "Samarkand - one of the oldest cities in the world, founded, according to archaeological data, in the middle of the 8th century B.C. (Ancient Marakand), the capital of the state of Timurids, became the first capital of Soviet Uzbekistan in 1924. For more than two millennia, the city has been a key point on the Silk Road between China and Europe, as well as a major center.",
-            price: "100$",
+            price: "70$",
             img: "http://www.opts.tours/images/slider/slide3.jpg",
             img2: samarkand,
             places: [
@@ -80,7 +80,7 @@ const initialState = {
             id: 2,
             title: "Tour in Bukhara",
             body: "Bukhara - oasis city, the largest settlement, is located right in the middle of the desert. The city, once located on the Great Silk Road, is one of the oldest - its history exceeds 2500 years. Bukhara embodies the centuries-old history of ancient traditions with Islam. The city with an incredible atmosphere of wisdom, sanctity and teachings. Once you’re in this city, it’s like you’re on another world and another planet. The incredible mixing of cultural, religious, and ethnic civilizations made Bukhara a city of indelible impressions.",
-            price: "100$",
+            price: "60$",
             img: bukhara,
             img2: bukhara2,
             places: [
@@ -106,7 +106,7 @@ const initialState = {
             id: 3,
             title: "Tour in Xiva",
             body: "Khiva is one of the oldest cities in Uzbekistan. Its history spans more than two and a half thousand years.  Khiva city, one of the few cities that managed to maintain its identity, as originally conceived by architects. Khiva is a «living» monument, a city-museum. The oldest city according to one of the legends was founded by the son of the biblical Noah Sim. He started by digging a well in the middle of the desert. Caravans and merchants passed by, tasted amazing tasty water and sentenced «hayvak», that is «as well». And this incredible city appeared. Majestic buildings, carved doors and columns, the incredible beauty of the building are books with coded messages from the depths of time. In its history Khiva experienced blossoms and falls. Khiva was one of the largest cities of the ancient Khorezm state. The city has hundreds of attractions, most of them religious and architectural buildings with rich history. In 1990 it was included in the UNESCO World Heritage List.",
-            price: "100$",
+            price: "60$",
             img: xiva,
             img2: xiva2,
             places: [
@@ -124,7 +124,7 @@ const initialState = {
             id: 4,
             title: "Tour in Shahrisabz",
             body: "Shahrisabz is one of the most beautiful and colorful cities in Uzbekistan. Its name translated from Persian means «Green City», and this definition for Shakhrisabz is quite applicable, as the city really drowns in the emerald greenery of gardens and vineyards. Shahrisabz lies only 80 km south of Samarkand, at the foot of the Gissar and Zeravshansky ranges, at the confluence of the Aksu and Tankhoz rivers. The city is 622 meters above sea level. Shahrisabz is also famous for magnificent monuments of history and architecture, many of which were erected under the Timurid dynasty in the 15th century. Great ruler Timur has turned Shahrizabz into the most real second capital of the state, having built in the city truly luxurious buildings and constructions, such as Ak-Saray, a palace with snow-white walls, Dorut-Tillawat and other impressive architectural ensembles, that impress the guests to this day.",
-            price: "100$",
+            price: "60$",
             img: shaxrisabs,
             img2: shaxrisabs,
             places: [
@@ -137,7 +137,7 @@ const initialState = {
             id: 5,
             title: "Tour in Tashkent",
             body: "Tashkent - the capital of Uzbekistan, a metropolis with a population of more than 2.5 million people, strung a grid of straight and wide streets and avenues, decorated with «emerald placers» parks, squares, gardens, riddled with crystal threads of fountains... This wonderful city is the embodiment of the most modern elegance, which is inherent in many capitals of the world, but at the same time, being a city of the east, Tashkent has its own unique flavor. It exquisitely combines medieval buildings, as if descended from the pages of ancient Eastern fairy tales, graceful European architecture, the remnant of the Turkestan General Governorship, standard concrete «boxes» of the Soviet era and, finally, Sparkling glass and concrete high-rises - the buildings of modern business centers and banks - as evidence of a new era of independent Uzbekistan.",
-            price: "100$",
+            price: "60$",
             img: tash2,
             img2: tash,
             places: [
@@ -155,7 +155,7 @@ const initialState = {
             id: 6,
             title: "Tour the cities of the great silk road",
             body: "In 1994, Samarkand adopted a declaration 'On the revival of the Silk Road'. The main route crosses 32 large and small cities of Central Asia. Tashkent, Samarkand, Bukhara, Khiva and the cities of the Fergana valley are precious stones of the Silk Road.",
-            price: "100$",
+            price: "Tour price on request",
             img: tash,
             img2: "https://cdn2.tu-tu.ru/image/pagetree_node_data/1/da19747169d87b7b39d0863c38c9bf88/",
             places: [
@@ -173,7 +173,7 @@ const initialState = {
             id: 7,
             title: "Tour 'Navruz'",
             body: "Ask any Uzbek, whether old or young, about the warmest and favorite holidays. And, most often, you will hear the answer: «Nowruz». What is this holiday? And why is it so loved by indigenous people and guests of the country? ",
-            price: "100$",
+            price: "Tour price on request",
             img: "https://mice-uzbekistan.uz/wp-content/uploads/2017/02/1457161064_984.jpg",
             img2: "https://mice-uzbekistan.uz/wp-content/uploads/2017/02/1457161064_984.jpg",
             places: [
