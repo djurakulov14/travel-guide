@@ -115,7 +115,7 @@ export const InfoPage = () => {
                                 <p>{t("stick.child")}</p>
                             </div>
                             <div className="duration flex justify-between mb-3">
-                                <h1 className=' font-bold max-xl:font-semibold'>{t("stick.howH1")}</h1>
+                                <h1 className=' font-bold max-xl:font-semibold '>{t("stick.howH1")}</h1>
                                 <p>{t("stick.how")}</p>
                             </div>
                             {/* <div className="duration flex flex-col justify-between mb-3">
@@ -128,7 +128,7 @@ export const InfoPage = () => {
                         <div className="bot pt-3">
                             <div className="prices flex justify-between">
                                 <h1 className='font-bold'>{t("stick.price")}</h1>
-                                <p className='font-bold text-lg' >60 $</p>
+                                <p className='font-bold text-lg max-[400px]:text-base max-[400px]:font-medium' >{info.price}</p>
                             </div>
                             <span onClick={() => handleClickOpen("paper")} className=' underline cursor-pointer text-white'>{t("readMore")}. . .</span>
                             <a href="https://t.me/fevzie_ablaeva"><button className='w-full bg-[#00000030] p-3 rounded-lg text-center mt-2'>{t("stick.button")}</button></a>
@@ -168,7 +168,7 @@ export const InfoPage = () => {
                                     </div>
                                     <div className="prices flex justify-between">
                                         <h1 className='font-bold max-[400px]:text-sm max-[400px]:font-semibold'>{t("stick.price")}</h1>
-                                        <p className='font-bold text-lg max-[400px]:text-base max-[400px]:font-medium' >60 $</p>
+                                        <p className='font-bold text-lg max-[400px]:text-base max-[400px]:font-medium' >{info.price}</p>
                                     </div>
                                     <p className='font-bold max-xl:font-semibold mb-5' >{t("stick.priceInfo")}</p>
                                     <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.details")}</h1>
