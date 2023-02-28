@@ -105,11 +105,16 @@ export const InfoPage = () => {
                         className="right stic h-fit w-1/3 bg-[#3ba4ec] p-5 rounded-lg text-white max-lg:w-full max-md:mt-10">
                         <img src={kalpok} className=' w-24 absolute -top-5 -right-3 rotate-[25deg]' alt="Тюбитейка" />
                         <div className="top border-b border-white">
-                            <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{t("stick.title")}</h1>
-                            <div className="duration flex justify-between mb-3">
-                                <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
-                                <p>{t("stick.time")}</p>
-                            </div>
+                            <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-lg max-[30px]:w-full'>{info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? t("stick.title2") : t("stick.title")}</h1>
+                            {
+                                info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? 
+                                ""
+                                :
+                                <div className="duration flex justify-between mb-3">
+                                    <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
+                                    <p>{t("stick.time")}</p>
+                                </div>
+                            }
                             <div className="duration flex justify-between mb-3">
                                 <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
                                 <p>{t("stick.child")}</p>
@@ -153,11 +158,16 @@ export const InfoPage = () => {
                                     ref={descriptionElementRef}
                                     tabIndex={-1}
                                 >
-                                    <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-base max-[30px]:w-full'>{t("stick.title")}</h1>
-                                    <div className="duration flex justify-between mb-3">
-                                        <h1 className=' font-bold max-xl:font-semibold max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.durationH1")}</h1>
-                                        <p className='max-[400px]:text-xs'>{t("stick.time")}</p>
-                                    </div>
+                                    <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-base max-[30px]:w-full'>{info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? t("stick.title2") : t("stick.title")}</h1>
+                                    {
+                                        info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? 
+                                        ""
+                                        :
+                                        <div className="duration flex justify-between mb-3">
+                                            <h1 className=' font-bold max-xl:font-semibold'>{t("stick.durationH1")}</h1>
+                                            <p>{t("stick.time")}</p>
+                                        </div>
+                                    }  
                                     <div className="duration flex justify-between mb-3">
                                         <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
                                         <p className='max-[400px]:text-xs'>{t("stick.child")}</p>
