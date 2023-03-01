@@ -180,10 +180,20 @@ export const InfoPage = () => {
                                         <h1 className='font-bold max-[400px]:text-sm max-[400px]:font-semibold'>{t("stick.price")}</h1>
                                         <p className='font-bold text-lg max-[400px]:text-base max-[400px]:font-medium' >{info.price}</p>
                                     </div>
+                                    {
+                                        info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? 
+                                        ""
+                                        :
                                     <p className='font-bold max-xl:font-semibold mb-5' >{t("stick.priceInfo")}</p>
+                                    }  
                                     <h1 className=' font-bold text-xl mb-5 max-xl:font-semibold w-10/13 max-[400px]:w-[90%] max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.details")}</h1>
                                     <h1 className=' font-bold max-xl:font-semibold mb-2 max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.byWhat1")}</h1>
-                                    <h1 className=' font-bold max-xl:font-semibold mb-5 max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.byWhat2")}</h1>
+                                    {
+                                        info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? 
+                                        ""
+                                        :
+                                        <h1 className=' font-bold max-xl:font-semibold mb-5 max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.byWhat2")}</h1>
+                                    }  
                                     {
                                         info.title.includes("Samarkand") || info.title.includes("Самарканд") ?
                                             <h1 className=' font-bold max-xl:font-semibold max-[400px]:text-sm max-[400px]:font-medium'>{t("stick.onlySam")}</h1>
