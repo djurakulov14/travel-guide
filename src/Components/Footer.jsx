@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
 
@@ -17,17 +18,20 @@ const Footer = () => {
             <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaTelegram size={30} />
             </a>
-            <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
+            <a href="https://www.instagram.com/fevzie_ablaeva/" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaInstagram size={30} />
             </a>
-            <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
+            <a href="https://www.facebook.com/fewzie.ablaewa" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaFacebook size={30} />
+            </a>
+            <a href="mailto:afevzie@inbox.ru" className="text-gray-400 hover:text-[#3ba4ec]">
+              <FiMail size={30} />
             </a>
           </div>
         </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-aut lg:my-8" />
-      <span className="block text-sm text-gray-500 text-center">
+      <span className="block text-sm text-gray-500 text-center"> 
         ©
         <span className="hover:underline">
           Viktoriya™
