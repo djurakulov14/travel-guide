@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
 
@@ -14,10 +14,14 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 flex-col">
           <div className="flex items-center gap-4 max-md:gap-2">
-            <p className="text-xl font-medium max-sm:text-sm">{t("footerTelega")}</p>
             <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
               <FaTelegram size={30} />
-              <span className="sr-only">Telegram page</span>
+            </a>
+            <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
+              <FaInstagram size={30} />
+            </a>
+            <a href="https://t.me/fevzie_ablaeva" className="text-gray-400 hover:text-[#3ba4ec]">
+              <FaFacebook size={30} />
             </a>
           </div>
         </div>
