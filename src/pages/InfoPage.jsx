@@ -119,10 +119,16 @@ export const InfoPage = () => {
                                 <h1 className=' font-bold max-xl:font-semibold'>{t("stick.childH1")}</h1>
                                 <p>{t("stick.child")}</p>
                             </div>
-                            <div className="duration flex justify-between mb-3">
-                                <h1 className=' font-bold max-xl:font-semibold '>{t("stick.howH1")}</h1>
-                                <p>{t("stick.how")}</p>
-                            </div>
+                            {
+                                info.price.includes("тур") || info.price.toLowerCase().includes("tour") ? 
+                                ""
+                                :
+                                <div className="duration flex justify-between mb-3">
+                                    <h1 className=' font-bold max-xl:font-semibold '>{t("stick.howH1")}</h1>
+                                    <p>{t("stick.how")}</p>
+                                </div>
+                            }
+                            
                             {/* <div className="duration flex flex-col justify-between mb-3">
                             <h1 className=' font-bold max-xl:font-semibold'>{t("stick.priceIncTitle")}</h1>
                             <p>{t("stick.priceinc1")}</p>
