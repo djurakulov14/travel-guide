@@ -22,7 +22,7 @@ export const HomePage = () => {
 
   const toursEN = useSelector((state) => state.toursEN.tours);
   const toursRU = useSelector((state) => state.toursRU.tours);
-
+  // const 
   const tours = currentLNG === "en" ? toursEN : toursRU;
   AOS.init({
     once: true,

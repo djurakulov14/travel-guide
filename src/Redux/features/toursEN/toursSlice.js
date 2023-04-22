@@ -57,7 +57,7 @@ const initialState = {
             title: "Tour in Samarkand",
             body: "Samarkand - one of the oldest cities in the world, founded, according to archaeological data, in the middle of the 8th century B.C. (Ancient Marakand), the capital of the state of Timurids, became the first capital of Soviet Uzbekistan in 1924. For more than two millennia, the city has been a key point on the Silk Road between China and Europe, as well as a major center.",
             price: "70$",
-            img: "http://www.opts.tours/images/slider/slide3.jpg",
+            img: "https://www.advantour.com/img/uzbekistan/images/samarkand.jpg",
             img2: samarkand,
             places: [
                 {title:"Gur Emir mausoleum", img: gurEmir, body: "Gur-Emir «Tomb of the Emir» - Mausoleum of Tamerlan (Amir Timur), his mentor Mir Sayyid Barak, and some members of the Timur family - (Timurids) in Samarkand.  Built on Timur’s initiative and with funds in 1403, the masterpiece of Persian architecture of the Timurid era occupies an important place in the history of world Islamic architecture. The main architect of the mausoleum was Mahmud Isfahani, an Iranian town."},

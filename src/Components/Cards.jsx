@@ -21,7 +21,7 @@ const Cards = ({ item }) => {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
             data-aos-duration="500" className="cont-n hover:drop-shadow-2xl transition ease-in w-full m-auto bg-white border border-gray-200 rounded-lg shadow-md">
-            <div className="rounded-t-lg h-52 max-xl:h-36 max-md:h-32 max-sm:h-full bg-red-300 overflow-hidden">
+            <div className="rounded-t-lg h-52 max-xl:h-36 max-md:h-32 max-sm:h-full  overflow-hidden">
                 <img className=" object-cover w-full" src={item.img} alt="" />
             </div>
             <div className="p-5">
