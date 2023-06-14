@@ -15,6 +15,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 export const HomePage = () => {
   const { t, i18n } = useTranslation();
@@ -22,7 +23,7 @@ export const HomePage = () => {
 
   const toursEN = useSelector((state) => state.toursEN.tours);
   const toursRU = useSelector((state) => state.toursRU.tours);
-  // const 
+
   const tours = currentLNG === "en" ? toursEN : toursRU;
   AOS.init({
     once: true,
@@ -36,7 +37,7 @@ export const HomePage = () => {
   };
   const scrollTour = () => {
     window.scrollTo({ left: 0, top: 1100, behavior: "smooth" });
-  }
+  };
   const scrollTour2 = () => {
     window.scrollTo({ left: 0, top: 1140, behavior: "smooth" });
   };
@@ -54,7 +55,6 @@ export const HomePage = () => {
       }
     };
   }, []);
-  // modal
 
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
@@ -83,6 +83,10 @@ export const HomePage = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Viktoriya - Main</title>
+      </Helmet>
       <div className="mb-20 w-full overflow-hidden overflow-x-hidden">
         <header className=" w-full p-4 bg-[#3ba4ec]">
           <div className="container m-auto flex items-center justify-between">
@@ -95,12 +99,36 @@ export const HomePage = () => {
               <p className="text-xl cursor-pointer">Tour guide</p>
             </div>
             <nav>
-              <div className='flex gap-5 text-white items-center'>
-                <p onClick={scrollTour} className='cursor-pointer max-[580px]:hidden'>{t("toursText")}</p>
-                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>{t("QuestionText")}</p>
-                <p onClick={scrollBottom} className='cursor-pointer max-[580px]:hidden'>{t("ContactsText")}</p>
-                <div onClick={() => ChangeLanguage(currentLNG === "en" ? "ru" : "en")} className='flex gap-1 items-center mr-5 cursor-pointer'>
-                  <img className=' w-6' src={currentLNG === "en" ? us : ru} alt="language" />
+              <div className="flex gap-5 text-white items-center">
+                <p
+                  onClick={scrollTour}
+                  className="cursor-pointer max-[580px]:hidden"
+                >
+                  {t("toursText")}
+                </p>
+                <p
+                  onClick={scrollBottom}
+                  className="cursor-pointer max-[580px]:hidden"
+                >
+                  {t("QuestionText")}
+                </p>
+                <p
+                  onClick={scrollBottom}
+                  className="cursor-pointer max-[580px]:hidden"
+                >
+                  {t("ContactsText")}
+                </p>
+                <div
+                  onClick={() =>
+                    ChangeLanguage(currentLNG === "en" ? "ru" : "en")
+                  }
+                  className="flex gap-1 items-center mr-5 cursor-pointer"
+                >
+                  <img
+                    className=" w-6"
+                    src={currentLNG === "en" ? us : ru}
+                    alt="language"
+                  />
                   <p>{currentLNG === "en" ? "EN" : "РУ"}</p>
                 </div>
               </div>
