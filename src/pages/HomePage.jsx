@@ -86,6 +86,28 @@ export const HomePage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Viktoriya - Main</title>
+        <meta
+          name="description"
+          content="Туристический гид Viktoriya Travel. Туры по таким историческим городам как Самарканд и Бухара!"
+        />
+
+        <meta
+          name="keywords"
+          content="гид самарканд, гид узбекистан, гид бухара, гид по узбекистану, экскурсия, путешествия, тур, гид по всем городам узбекистана, tour guide, Samarkand, Viktoriya Travel, history, sightseeing"
+        />
+        <meta name="author" content="Viktoriya Travel" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Viktoriya Travel: Тур гид в Самарканде" />
+        <meta property="og:description" content="Ваш незабываемый тур по Самарканду с Viktoriya Travel. Опытный и профессиональный тур гид, который покажет вам лучшие достопримечательности города и расскажет о его истории." />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="x-rim-auto-match" content="none" />
+        <meta property="og:url" content="https://asiavictoriyatravel.com/" />
       </Helmet>
       <div className="mb-20 w-full overflow-hidden overflow-x-hidden">
         <header className=" w-full p-4 bg-[#3ba4ec]">

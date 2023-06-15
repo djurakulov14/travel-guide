@@ -57,14 +57,6 @@ export const InfoPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Viktoriya - {info.title}</title>
-        <meta name="description" content="Туристический гид Viktoriya Travel. Туры по таким историческим городам как Самарканд и Бухара!" />
-		 
-		<meta name="keywords" content="гид самарканд, гид узбекистан, гид бухара, гид по узбекистану, экскурсия, путешествия, тур, гид по всем городам узбекистана" />
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="msapplication-tap-highlight" content="no"/>
-        <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="x-rim-auto-match" content="none" />
       </Helmet>
       <section className="overflow-hidden w-full bg-cover bg-center mb-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[500px]:mb-0 max-[400px]:h-[250px] ">
         <div className="div w-full absolute -z-10 h-[600px] max-[680px]:h-[400px] max-[500px]:h-[300px] max-[400px]:h-[250px] after:absolute after:inset-0 after:bg-[rgba(0,0,0,.5)] after:z-[2]">
