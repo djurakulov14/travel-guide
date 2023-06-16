@@ -4,6 +4,7 @@ import Cards from "../Components/Cards";
 import user from "../resources/grandpa.jpeg";
 import ru from "../resources/russia.svg";
 import us from "../resources/us.png";
+import deutsch from "../resources/germany.svg";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import Questions from "../Components/Questions";
@@ -20,11 +21,12 @@ import { Helmet } from "react-helmet";
 export const HomePage = () => {
   const { t, i18n } = useTranslation();
   const currentLNG = useTranslation()[1].language;
-
+  console.log(useTranslation()[1]);
   const toursEN = useSelector((state) => state.toursEN.tours);
   const toursRU = useSelector((state) => state.toursRU.tours);
+  const toursDeutch = useSelector((state) => state.toursDeutch.tours);
 
-  const tours = currentLNG === "en" ? toursEN : toursRU;
+  const tours = currentLNG === "en" ? toursEN : currentLNG === "ru" ? toursRU : toursDeutch;
   AOS.init({
     once: true,
   });
@@ -63,7 +65,6 @@ export const HomePage = () => {
     setOpen(true);
     setScroll(scrollType);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
@@ -76,7 +77,6 @@ export const HomePage = () => {
       }
     }
   }, [open]);
-
   function ChangeLanguage(language) {
     i18n.changeLanguage(language);
   }
@@ -90,7 +90,6 @@ export const HomePage = () => {
           name="description"
           content="Туристический гид Viktoriya Travel. Туры по таким историческим городам как Самарканд и Бухара!"
         />
-
         <meta
           name="keywords"
           content="гид самарканд, гид узбекистан, гид бухара, гид по узбекистану, экскурсия, путешествия, тур, гид по всем городам узбекистана, tour guide, Samarkand, Viktoriya Travel, history, sightseeing"
@@ -142,16 +141,16 @@ export const HomePage = () => {
                 </p>
                 <div
                   onClick={() =>
-                    ChangeLanguage(currentLNG === "en" ? "ru" : "en")
+                    ChangeLanguage(currentLNG === "en" ? "ru" : currentLNG === "ru" ? "deutsch" : "en")
                   }
                   className="flex gap-1 items-center mr-5 cursor-pointer"
                 >
                   <img
-                    className=" w-6"
-                    src={currentLNG === "en" ? us : ru}
+                    className="w-6"
+                    src={currentLNG === "en" ? us : currentLNG === "ru" ? ru : deutsch}
                     alt="language"
                   />
-                  <p>{currentLNG === "en" ? "EN" : "РУ"}</p>
+                  <p>{currentLNG === "en" ? "EN" : currentLNG === "ru" ? "РУ" : 'Deutsch'}</p>
                 </div>
               </div>
             </nav>

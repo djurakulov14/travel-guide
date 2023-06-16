@@ -25,10 +25,12 @@ export const InfoPage = () => {
 
   const toursEN = useSelector((state) => state.toursEN.tours);
   const toursRU = useSelector((state) => state.toursRU.tours);
+  const toursDeutch = useSelector((state) => state.toursDeutch.tours);
   const info =
     currentLGN === "en"
       ? toursEN.filter((item) => item.id === +splited)[0]
-      : toursRU.filter((item) => item.id === +splited)[0];
+      : currentLGN === "ru" ? toursRU.filter((item) => item.id === +splited)[0] 
+      : toursDeutch.filter((item) => item.id === +splited)[0];
 
   const [open, setOpen] = React.useState(false);
   const [scroll, setScroll] = React.useState("paper");
